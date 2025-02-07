@@ -1,0 +1,11 @@
+services:
+  react-app:
+    build: ./FrontEnd/swtccopy
+    container_name: react
+    ports:
+      - 3000:3000
+    volumes:
+      - ./FrontEnd/swtccopy:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
