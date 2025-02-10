@@ -23,6 +23,6 @@
     "src/Components/Dashboard.tsx",
     "src/Components/Login.tsx",
     "src/Components/Register.tsx",
-    "tailwind.config.js"
+    "postcss.config.js"
   ]
 }
