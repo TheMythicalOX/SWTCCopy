@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "./Footer.tsx";
-import News from "./News.tsx";
+import Footer from "./Footer";
+import News from "./News";
 function App() {
   return (
     <div className="App">
