@@ -3,12 +3,13 @@ import Footer from "./Footer";
 import News from "./News";
 import Upcoming from "./Upcoming";
 import Header from "./Header";
+import Campus from "./Campus";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p className="font-bold underline">Hello World</p>
         <Header />
+        <Campus />
         <Upcoming />
         <News />
         <Footer />

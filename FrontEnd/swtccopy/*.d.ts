@@ -9,6 +9,15 @@ declare module "*.jpg" {
 }
 
 declare module "*.webp" {
-  const value: number;
+  const value: string;
+  export = value;
+}
+
+declare module "*.gif" {
+  const value: string;
+  export = value;
+}
+declare module "*.svg" {
+  const value: string;
   export = value;
 }
