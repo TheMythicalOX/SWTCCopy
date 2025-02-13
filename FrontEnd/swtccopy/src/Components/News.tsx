@@ -3,7 +3,7 @@ import news from "../images/news.svg";
 
 const News = () => {
   return (
-    <div className="bg-sky-700">
+    <div className="bg-news-bg">
       <div className="topNews">
         <h1>
           <img src={news} alt="News Icon" className="w-10"></img> IN THE NEWS

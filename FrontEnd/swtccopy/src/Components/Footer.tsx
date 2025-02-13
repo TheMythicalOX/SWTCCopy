@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="bg-neutral-700 text-foot-text grid grid-cols-3 grid-rows-2 text-center pt-32">
+      <div className="bg-foot-bg text-foot-text grid grid-cols-3 grid-rows-2 text-center pt-32">
         <div className="Contact ">
           <h1 className="font-medium pt-2 pb-3">CONTACT INFORMATION</h1>
           <p>
@@ -123,7 +123,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="Bottom bg-neutral-800 text-foot-text text-center p-10">
+      <div className="Bottom bg-foot-lower-bg text-foot-text text-center p-10">
         <p className="p-5">
           Southwest Tech is committed to legal affirmative action, equal
           opportunity, access and diversity of its campus community.{" "}

@@ -7,12 +7,12 @@ import event from "../images/upcoming-events.svg";
 const Upcoming = () => {
   return (
     <div className="test">
-      <div className="topEvents">
-        <h1>
-          <img src={event} alt="Event Icon" className="w-9"></img> UPCOMING
-          EVENTS
+      <div className="topEvents text-campus-bg inline-flex w-full pt-5">
+        <img src={event} alt="Event Icon" className="w-9"></img>
+        <h1 className="font-semibold text-nowrap text-center m-auto px-3">
+          UPCOMING EVENTS
         </h1>
-        <p>LINE GRAPHIC</p>
+        <div className="h-1 w-full bg-campus-bg m-auto"></div>
       </div>
       <div className="images grid grid-cols-3 gap-5 p-5">
         <img src={first} alt="TMP" className="1col  object-contain" />

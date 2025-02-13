@@ -3,7 +3,7 @@ import hero from "../images/AspenHeroWeb.jpg";
 
 const Campus = () => {
   return (
-    <div className="camp bg-blue-900">
+    <div className="camp bg-campus-bg">
       <img src={hero} alt="TMP" className="2col  object-contain" />
       <a href="/#">Visit Campus</a>
       <p>

@@ -6,14 +6,12 @@ import Header from "./Header";
 import Campus from "./Campus";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header />
-        <Campus />
-        <Upcoming />
-        <News />
-        <Footer />
-      </header>
+    <div className="App text-white font-sans">
+      <Header />
+      <Campus />
+      <Upcoming />
+      <News />
+      <Footer />
     </div>
   );
 }
