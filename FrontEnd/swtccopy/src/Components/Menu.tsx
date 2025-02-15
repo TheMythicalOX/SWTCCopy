@@ -10,186 +10,206 @@ const Menu = () => {
     }
   };
 
+  const listItem = "pl-10 pb-5";
+  const headItem = "pl-5 pb-5";
+
   return (
     <div className="menu">
-      <div className="MenuButton">
-        <button onClick={toggleMenue}>MENU</button>
+      <div className="MenuButton fixed right-3 top-4 transition-all hover:scale-125 duration-500">
+        <button
+          className="ring-2 ring-white px-4 py-1 text-sm font-medium"
+          onClick={toggleMenue}
+        >
+          MENU
+        </button>
       </div>
       {menueState && (
         <div className="Drop">
           <div className="programs">
-            <a href="/#">Programs & Classes</a>
             <ul>
-              <li>
+              <li className={headItem}>
+                <a href="/#">Programs & Classes</a>
+              </li>
+              <li className={listItem}>
                 <a href="/#">Programs</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Apprenticeships</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Counting Education</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Earn Credit in High School</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">GED/HSED</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">General Education</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Online</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Transfer Agreements</a>
               </li>
             </ul>
           </div>
           <div className="admissions">
-            <a href="/#">Admissions</a>
             <ul>
-              <li>
+              <li className={headItem}>
+                <a href="/#">Admissions</a>
+              </li>
+              <li className={listItem}>
                 <a href="/#">Explore Careers</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Visit Campus</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Paying for College</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Transfer</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Credit for Prior Learning</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Apply Now</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Program Registration</a>
               </li>
             </ul>
           </div>
           <div className="resources">
-            <a href="/#">Student Resources</a>
             <ul>
-              <li>
+              <li className={headItem}>
+                <a href="/#">Student Resources</a>
+              </li>
+              <li className={listItem}>
                 <a href="/#">Resident & Student Life</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">College Services</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Academic Support & Resources</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Financial Resources</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Charger tech 360</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Career Services</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Policies</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Testing Center</a>
               </li>
             </ul>
           </div>
           <div className="community">
-            <a href="/#">Community</a>
             <ul>
-              <li>
+              <li className={headItem}>
+                <a href="/#">Community</a>
+              </li>
+              <li className={listItem}>
                 <a href="/#">business & Industry</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Career Services</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Child Care</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Community Services</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Continuing Education</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Facility Rental</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Outreach Centers</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Public Safety Training</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Testing Center</a>
               </li>
             </ul>
           </div>
           <div className="foundation">
-            <a href="/#">Foundation</a>
             <ul>
-              <li>
+              <li className={headItem}>
+                <a href="/#">Foundation</a>
+              </li>
+              <li className={listItem}>
                 <a href="/#">Alumni</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Board</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Donate Today</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Giving Opportunities</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Scholarships</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Visionary Circle</a>
               </li>
             </ul>
           </div>
           <div className="about">
-            <a href="/#">About</a>
             <ul>
-              <li>
+              <li className={headItem}>
+                <a href="/#">About</a>
+              </li>
+              <li className={listItem}>
                 <a href="/#">Who We Are</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Board</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Accreditation</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Campus Directory</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">College Effectiveness</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Core Abilities</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Consumer Information</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Current Bids/RFPs</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Job Opportunities</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Policies</a>
               </li>
-              <li>
+              <li className={listItem}>
                 <a href="/#">Publications</a>
               </li>
             </ul>

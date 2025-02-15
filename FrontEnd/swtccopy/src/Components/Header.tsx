@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 const Header = () => {
   return (
-    <div className="Head bg-header-bg">
+    <div className="Head bg-header-bg font-medium">
       <a href="/#">
         <img src={swtclogo} alt="swtclogo" className="w-2/5" />
       </a>
