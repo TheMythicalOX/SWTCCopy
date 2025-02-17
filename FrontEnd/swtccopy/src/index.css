@@ -20,8 +20,8 @@ code {
   text-shadow: 2px 2px 2px black;
 }
 
-.height-19-rem {
-  height: 19rem;
+.event-title-text-size {
+  font-size: 4vw;
 }
 @import "tailwindcss/base";
 
