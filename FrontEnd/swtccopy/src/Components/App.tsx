@@ -7,7 +7,7 @@ import Campus from "./Campus";
 import QuickLinks from "./QuickLinks";
 function App() {
   return (
-    <div className="App text-white font-sans">
+    <div className="App text-white font-sans tracking-widest">
       <Header />
       <Campus />
       <QuickLinks />

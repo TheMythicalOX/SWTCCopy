@@ -16,6 +16,13 @@ code {
   border: none;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 2px black;
+}
+
+.height-19-rem {
+  height: 19rem;
+}
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
