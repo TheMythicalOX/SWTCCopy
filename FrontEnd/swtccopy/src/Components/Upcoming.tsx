@@ -9,7 +9,7 @@ const Upcoming = () => {
   return (
     <div className="test grid">
       <div className="topEvents relative text-campus-bg pt-5 pb-20">
-        <div className="bg-header-bg absolute w-full h-[20%] top-1/2"></div>
+        <div className="bg-header-bg absolute w-full h-[16%] top-[43%]"></div>
 
         <div className="inline-flex w-full h-1/6">
           <img src={event} alt="Event Icon" className="w-9 ml-4"></img>
@@ -74,7 +74,7 @@ const Upcoming = () => {
           </div>
         </div>
         <div className="">
-          <div className="text-header-bg p-2 my-4 h-auto w-[35%] mx-auto text-lg font-semibold text-center transition-colors duration-500 hover:bg-header-bg hover:text-white">
+          <div className="text-header-bg p-2 my-4 h-auto w-[35%] mx-auto text-lg font-bold text-center transition-colors duration-500 hover:bg-header-bg hover:text-white">
             <a href="/#">
               See all Calendar Events
               <img src={tmp} alt="tmp" className="w-4 inline"></img>
