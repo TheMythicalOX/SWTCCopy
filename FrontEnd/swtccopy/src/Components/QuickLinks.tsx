@@ -10,7 +10,7 @@ const QuickLinks = () => {
 
   const linkStyle = `w-[106px] h-[5.5rem] mb-2
   bg-quick-link-bg opacity-50 inline-flex group overflow-hidden
-  transition-all ease-in-out duration-700 border border-black border-r border-t hover:border-l-2 hover:border-b-2
+  transition-all ease-in-out duration-700 border border-black border-r border-t border-l-2 border-b-2
   hover:bg-white hover:opacity-100 hover:w-80`;
 
   return (
