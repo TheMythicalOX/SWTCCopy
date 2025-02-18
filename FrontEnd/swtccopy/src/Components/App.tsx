@@ -14,6 +14,7 @@ function App() {
       <Upcoming />
       <News />
       <Footer />
+      <div></div>
     </div>
   );
 }

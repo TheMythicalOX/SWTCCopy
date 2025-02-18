@@ -15,7 +15,7 @@ const Menu = () => {
 
   return (
     <div className="menu">
-      <div className="MenuButton fixed right-3 top-4 transition-all hover:scale-125 duration-500">
+      <div className="MenuButton absolute right-3 top-4 transition-all hover:scale-125 duration-500">
         <button
           className="ring-2 ring-white px-4 py-1 text-sm font-medium"
           onClick={toggleMenue}
