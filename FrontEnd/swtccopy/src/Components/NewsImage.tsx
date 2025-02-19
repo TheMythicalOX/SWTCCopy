@@ -3,11 +3,17 @@ import React from "react";
 const NewsImage = (props: {
   link: string;
   image: string;
-  span: string;
+  span: number;
   text: string;
 }) => {
+  let span = "";
+  if (props.span === 2) {
+    span = "input-border-none col-span-2";
+  } else {
+    span = "input-border-none col-span-1";
+  }
   return (
-    <a href={props.link} className={`input-border-none col-span-${props.span}`}>
+    <a href={props.link} className={span}>
       <div className="relative group items-center text-[1.6em] h-full bg-campus-bg">
         <div className="overflow-hidden max-h-[400px]">
           <div className="z-10 absolute w-full text-center font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg group-hover:bottom-0 bottom-1/3">

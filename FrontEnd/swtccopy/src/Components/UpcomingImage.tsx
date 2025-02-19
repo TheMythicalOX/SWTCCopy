@@ -11,9 +11,7 @@ const UpcomingImage = (props: {
       <a href={props.link} className="input-border-none overflow-hidden">
         <div className="overflow-hidden relative bg-campus-bg">
           <div className="z-10 absolute w-full text-center font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg group-hover:bottom-0 bottom-1/3">
-            <h2 className="text-shadow event-title-text-size">
-              {props.heading}
-            </h2>
+            <h2 className="text-shadow text-4xl">{props.heading}</h2>
             <p className="text-xl text-shadow">{props.text}</p>
           </div>
           <img

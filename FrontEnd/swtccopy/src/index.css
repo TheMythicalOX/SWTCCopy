@@ -19,10 +19,6 @@ code {
 .text-shadow {
   text-shadow: 2px 2px 2px black;
 }
-
-.event-title-text-size {
-  font-size: 4vw;
-}
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
