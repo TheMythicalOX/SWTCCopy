@@ -138,7 +138,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="Bottom bg-foot-lower-bg text-foot-text text-center p-10">
+      <div className="Bottom bg-foot-lower-bg text-foot-text text-center">
         <p className="p-5 pb-0">
           Southwest Tech is committed to legal affirmative action, equal
           opportunity, access and diversity of its campus community.{" "}

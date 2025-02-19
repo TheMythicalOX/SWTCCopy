@@ -1,5 +1,6 @@
 import React from "react";
 import news from "../images/news.svg";
+import NewsImage from "./NewsImage";
 
 const News = () => {
   return (
@@ -12,54 +13,24 @@ const News = () => {
         <div className="h-1 w-full bg-white m-auto"></div>
       </div>
       <div className="images grid grid-cols-2 auto-rows-max gap-8 ">
-        <a href="/#" className="input-border-none col-span-2">
-          <div className="relative group items-center text-[1.6em] h-full bg-campus-bg">
-            <div className="overflow-hidden max-h-[400px]">
-              <div className="z-10 absolute w-full text-center font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg group-hover:bottom-0 bottom-1/3">
-                <h2 className="text-shadow text-2xl p-3">
-                  New Scholarship format unveiled at Southwest Tech
-                </h2>
-              </div>
-              <img
-                src="https://www.swtc.edu/news/wp-content/uploads/2025/02/CRAWFORD-FRONT.jpg"
-                alt="TMP"
-                className="object-cover h-auto w-full opacity-40 transition-all ease-in-out group-hover:opacity-100 duration-700 z-0 group-hover:scale-125"
-              />
-            </div>
-          </div>
-        </a>
-        <a href="/#" className="input-border-none col-span-1">
-          <div className="relative group items-center text-[1.6em] h-full bg-campus-bg">
-            <div className="overflow-hidden max-h-[400px]">
-              <div className="z-10 absolute w-full text-center font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg group-hover:bottom-0 bottom-1/3">
-                <h2 className="text-shadow text-2xl p-3">
-                  New Scholarship format unveiled at Southwest Tech
-                </h2>
-              </div>
-              <img
-                src="https://www.swtc.edu/news/wp-content/uploads/2025/02/EDGAR-FRONT-2-1.png"
-                alt="TMP"
-                className="object-cover h-auto w-full opacity-40 transition-all ease-in-out group-hover:opacity-100 duration-700 z-0 group-hover:scale-125"
-              />
-            </div>
-          </div>
-        </a>
-        <a href="/#" className="input-border-none col-span-1">
-          <div className="relative group items-center text-[1.6em] h-full bg-campus-bg">
-            <div className="overflow-hidden max-h-[400px]">
-              <div className="z-10 absolute w-full text-center font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg group-hover:bottom-0 bottom-1/3">
-                <h2 className="text-shadow text-2xl p-3">
-                  New Scholarship format unveiled at Southwest Tech
-                </h2>
-              </div>
-              <img
-                src="https://www.swtc.edu/news/wp-content/uploads/2025/01/FRONT-1.jpg"
-                alt="TMP"
-                className="object-cover h-auto w-full opacity-40 transition-all ease-in-out group-hover:opacity-100 duration-700 z-0 group-hover:scale-125"
-              />
-            </div>
-          </div>
-        </a>
+        <NewsImage
+          link="/#"
+          image="https://www.swtc.edu/news/wp-content/uploads/2025/02/CRAWFORD-FRONT.jpg"
+          span="2"
+          text="New Scholarship format unveiled at Southwest Tech"
+        />
+        <NewsImage
+          link="/#"
+          image="https://www.swtc.edu/news/wp-content/uploads/2025/02/EDGAR-FRONT-2-1.png"
+          span="1"
+          text="Mendez carving path as local entrepeneur (with video)"
+        />
+        <NewsImage
+          link="/#"
+          image="https://www.swtc.edu/news/wp-content/uploads/2025/01/FRONT-1.jpg"
+          span="1"
+          text="New scholarship format unveiled at Southwest Tech"
+        />
       </div>
       <div className="pb-12">
         <a href="/#" className="">
