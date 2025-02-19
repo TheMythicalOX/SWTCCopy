@@ -63,7 +63,7 @@ const News = () => {
       </div>
       <div className="pb-12">
         <a href="/#" className="">
-          <div className="text-white p-3 h-auto w-[15%] mx-auto text-lg font-bold text-center transition-colors duration-500 hover:bg-white hover:text-header-bg">
+          <div className="text-white p-3 h-auto w-[20%] mx-auto text-lg font-bold text-center transition-colors duration-500 hover:bg-white hover:text-header-bg">
             <p className="">
               See all News
               <img src={news} alt="tmp" className="w-4 inline"></img>

@@ -1,10 +1,11 @@
 import React from "react";
+import tmp from "../images/tmp.svg";
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-foot-bg text-foot-text grid grid-cols-3 grid-rows-2 text-center pt-32">
-        <div className="Contact ">
+      <div className="bg-foot-bg text-foot-text font-medium gap-4 grid grid-cols-3 grid-flow-row p-5">
+        <div className="Contact row-span-2">
           <h1 className="font-medium pt-2 pb-3">CONTACT INFORMATION</h1>
           <p>
             Phone:&nbsp;
@@ -18,7 +19,7 @@ const Footer = () => {
               800.362.3322
             </a>
           </p>
-          <p>Line Graphic</p>
+          <div className="bg-foot-text w-full h-0.5 my-2"></div>
           <p>
             TDD (hearing impared):&nbsp;
             <a className="text-foot-link" href="/#">
@@ -32,7 +33,7 @@ const Footer = () => {
             </a>
           </p>
         </div>
-        <div className="Links">
+        <div className="Links row-span-3">
           <h1 className="font-medium pt-2 pb-3">CAMPUS LINKS</h1>
           <div className="CampLinks grid grid-cols-1">
             <a className="text-foot-link" href="/#">
@@ -64,7 +65,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="Forms">
+        <div className="Forms row-span-2">
           <h1 className="font-medium pt-2 pb-3">FORMS</h1>
           <div className="Form grid grid-cols-1">
             <a className="text-foot-link" href="/#">
@@ -84,22 +85,36 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="Hours">
+        <div className="Hours row-span-2">
           <h1 className="font-medium pt-2 pb-3">Hours</h1>
           <div className="Hrs grid grid-cols-1">
             <p>
               Monday-Friday 7:30am to 4:30pm Closed Fridays during June & July
             </p>
-            <p>Southwest Tech 1800 Bronson Boulevard Fennimore, WI 53809</p>
-            <div className="icons grid grid-cols-1">
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
+            <div className="italic p-5">
+              <p>Southwest Tech</p>
+              <p>1800 Bronson Boulevard</p>
+              <p>Fennimore, WI 53809</p>
+            </div>
+            <div className="icons grid grid-cols-4">
+              <img src={tmp} alt="" className="w-10" />
+              <img src={tmp} alt="" className="w-10" />
+              <img src={tmp} alt="" className="w-10" />
+              <img src={tmp} alt="" className="w-10" />
             </div>
           </div>
         </div>
-
+        <div className="staff row-span-1">
+          <h1 className="font-medium pt-2 pb-3">STAFF LINKS</h1>
+          <div className="Form grid grid-cols-1">
+            <a className="text-foot-link" href="/#">
+              Faculty & Staff Links
+            </a>
+            <a className="text-foot-link" href="/#">
+              Charger Hub
+            </a>
+          </div>
+        </div>
         <div className="Employment">
           <h1 className="font-medium pt-2 pb-3">EMPLOYMENT</h1>
           <div className="Employ grid grid-cols-1">
@@ -124,13 +139,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="Bottom bg-foot-lower-bg text-foot-text text-center p-10">
-        <p className="p-5">
+        <p className="p-5 pb-0">
           Southwest Tech is committed to legal affirmative action, equal
           opportunity, access and diversity of its campus community.{" "}
-          <a className="text-foot-link" href="/#">
-            Full Statement
-          </a>
         </p>
+        <a className="text-foot-link pt-0" href="/#">
+          Full Statement
+        </a>
         <p className="p-5">
           Copyright © 2025 Southwest Wisconsin Technical College. All rights
           reserved.
