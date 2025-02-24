@@ -13,14 +13,14 @@ const Header = () => {
   let headBoxStyle = "";
   let searchBocxStyle = "";
 
-  if (width > 1300) {
+  if (width < 1300) {
     headBoxStyle = "max-w-[1300px] justify-center mx-auto";
     searchBocxStyle = "";
   } else if (width < 725) {
     headBoxStyle = "";
     searchBocxStyle = "inline";
   } else {
-    headBoxStyle = "max-w-[1300px] p-5";
+    headBoxStyle = "max-w-[1300px] p-5 mx-auto";
     searchBocxStyle = "inline-block m-auto float-right";
   }
 
