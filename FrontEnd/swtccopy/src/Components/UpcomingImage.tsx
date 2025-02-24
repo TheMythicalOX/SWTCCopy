@@ -1,4 +1,5 @@
 import React from "react";
+import { useWindowDimensions } from "./App";
 
 const UpcomingImage = (props: {
   link: string;
@@ -6,19 +7,35 @@ const UpcomingImage = (props: {
   text: string;
   heading: string;
 }) => {
+  const { width } = useWindowDimensions();
+
+  let style1 = "";
+  let style2 = "";
+  let style3 = "";
+
+  if (width < 725) {
+    style1 = "overflow-hidden relative bg-white text-white";
+    style2 =
+      "z-10 absolute w-full text-center p-10 font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg bg-black opacity-60 group-hover:opacity-100 group-hover:bottom-0 bottom-1/3";
+    style3 =
+      "object-cover overflow-hidden h-fit opacity-1 transition-all ease-in-out group-hover:opacity-100 duration-700 z-0 group-hover:scale-125";
+  } else {
+    style1 = "overflow-hidden relative bg-campus-bg";
+    style2 =
+      "z-10 absolute w-full text-center font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg group-hover:bottom-0 bottom-1/3";
+    style3 =
+      "object-cover overflow-hidden h-fit opacity-60 transition-all ease-in-out group-hover:opacity-100 duration-700 z-0 group-hover:scale-125";
+  }
+
   return (
-    <div className=" group items-center">
+    <div className=" group items-center p-5">
       <a href={props.link} className="input-border-none overflow-hidden">
-        <div className="overflow-hidden relative bg-campus-bg">
-          <div className="z-10 absolute w-full text-center font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg group-hover:bottom-0 bottom-1/3">
+        <div className={style1}>
+          <div className={style2}>
             <h2 className="text-shadow text-4xl">{props.heading}</h2>
             <p className="text-xl text-shadow">{props.text}</p>
           </div>
-          <img
-            src={props.image}
-            alt="TMP"
-            className="object-cover overflow-hidden h-fit opacity-60 transition-all ease-in-out group-hover:opacity-100 duration-700 z-0 group-hover:scale-125"
-          />
+          <img src={props.image} alt="TMP" className={style3} />
         </div>
       </a>
     </div>
