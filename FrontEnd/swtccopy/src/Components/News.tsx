@@ -1,8 +1,22 @@
 import React from "react";
 import news from "../images/news.svg";
 import NewsImage from "./NewsImage";
+import { useWindowDimensions } from "./App";
 
 const News = () => {
+  const { width } = useWindowDimensions();
+
+  let style1 = "";
+  // let style2 = "";
+
+  if (width < 725) {
+    style1 = "";
+    // style2 = "inline-flex w-full";
+  } else {
+    style1 = "images grid grid-cols-2 gap-8 ";
+    // style2 = "inline-flex w-full h-1/6";
+  }
+
   return (
     <div className="bg-news-bg p-5">
       <div className="max-w-[1300px] justify-center mx-auto">
@@ -13,24 +27,24 @@ const News = () => {
           </h1>
           <div className="h-1 w-full bg-white m-auto"></div>
         </div>
-        <div className="images grid grid-cols-2 gap-8 ">
+        <div className={style1}>
+          <NewsImage
+            link="/#"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/02/GROUP-USE.jpg"
+            span={2}
+            text="Students advance to PAS National Conference"
+          />
+          <NewsImage
+            link="/#"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/02/GROUP-front2.jpg"
+            span={1}
+            text="Students compete at Midwest Reginal Dairy Challenge"
+          />
           <NewsImage
             link="/#"
             image="https://www.swtc.edu/news/wp-content/uploads/2025/02/CRAWFORD-FRONT.jpg"
-            span={2}
-            text="New Scholarship format unveiled at Southwest Tech"
-          />
-          <NewsImage
-            link="/#"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/02/EDGAR-FRONT-2-1.png"
             span={1}
-            text="Mendez carving path as local entrepeneur (with video)"
-          />
-          <NewsImage
-            link="/#"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/01/FRONT-1.jpg"
-            span={1}
-            text="New scholarship format unveiled at Southwest Tech"
+            text="New STEP Scholarship Program receives $5,000 grant"
           />
         </div>
         <div className="pb-12">
