@@ -30,21 +30,21 @@ const News = () => {
         <div className={style1}>
           <NewsImage
             link="/#"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/02/GROUP-USE.jpg"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/03/FRONT.jpg"
             span={2}
-            text="Students advance to PAS National Conference"
+            text="Patel selected as State Student Ambassador"
+          />
+          <NewsImage
+            link="/#"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/02/GROUP-USE.jpg"
+            span={1}
+            text="Students cadvance to PAS National Conference"
           />
           <NewsImage
             link="/#"
             image="https://www.swtc.edu/news/wp-content/uploads/2025/02/GROUP-front2.jpg"
             span={1}
             text="Students compete at Midwest Reginal Dairy Challenge"
-          />
-          <NewsImage
-            link="/#"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/02/CRAWFORD-FRONT.jpg"
-            span={1}
-            text="New STEP Scholarship Program receives $5,000 grant"
           />
         </div>
         <div className="pb-12">

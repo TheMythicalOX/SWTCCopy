@@ -1,12 +1,24 @@
 import React from "react";
 import tmp from "../images/tmp.svg";
+import { useWindowDimensions } from "./App";
 
 const Footer = () => {
+  const { width } = useWindowDimensions();
+  let boxStyle = "";
+
+  if (width < 725) {
+    boxStyle =
+      "text-foot-text text-xs font-medium gap-4 grid grid-cols-1 grid-flow-row p-5 justify-center mx-auto";
+  } else {
+    boxStyle =
+      "text-foot-text font-medium gap-4 grid grid-cols-3 grid-flow-row p-5 max-w-[1300px] justify-center mx-auto";
+  }
+
   return (
     <div className="bg-foot-bg">
-      <div className=" text-foot-text font-medium gap-4 grid grid-cols-3 grid-flow-row p-5 max-w-[1300px] justify-center mx-auto">
+      <div className={boxStyle}>
         <div className="Contact row-span-2">
-          <h1 className="font-medium pt-2 pb-3">CONTACT INFORMATION</h1>
+          <h1 className="font-medium pt-2 font pb-3">CONTACT INFORMATION</h1>
           <p>
             Phone:&nbsp;
             <a className="text-foot-link" href="/#">

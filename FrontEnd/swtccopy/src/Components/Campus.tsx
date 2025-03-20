@@ -1,11 +1,22 @@
 import React from "react";
 import hero from "../images/AspenHeroWeb.jpg";
+import { useWindowDimensions } from "./App";
 
 const Campus = () => {
+  const { width } = useWindowDimensions();
+
+  let imgStyle = "";
+
+  if (width > 1900) {
+    imgStyle = "2col max-w-[1900px] w-auto object-contain mx-auto";
+  } else {
+    imgStyle = "2col object-contain mx-auto";
+  }
+
   return (
-    <div className="camp bg-campus-bg">
-      <img src={hero} alt="TMP" className="2col  object-contain" />
-      <div className="max-w-[1300px] justify-center mx-auto">
+    <div className="camp bg-campus-bg mx-auto">
+      <img src={hero} alt="TMP" className={imgStyle} />
+      <div className="max-w-[1300px] justify-center align-middle mx-auto">
         <div className="p-5">
           <a className="underline font-semibold text-xl p-4 pl-0" href="/#">
             Visit Campus

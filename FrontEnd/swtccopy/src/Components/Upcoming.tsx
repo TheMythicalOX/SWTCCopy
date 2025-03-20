@@ -1,7 +1,7 @@
 import React from "react";
-import first from "../images/Explore-Mfg-we.jpg";
-import middle from "../images/AdultStudentInfoNight_we.jpg";
-import last from "../images/MidtermStarts_we.jpg";
+import first from "../images/AdultStudentInfoNight_we.jpg";
+import middle from "../images/MidtermStarts_we.jpg";
+import last from "../images/JobFair_we.jpg";
 import event from "../images/upcoming-events.svg";
 import tmp from "../images/tmp.svg";
 import UpcomingImage from "./UpcomingImage";
@@ -39,20 +39,20 @@ const Upcoming = () => {
             <UpcomingImage
               link="/#"
               image={first}
-              text="Manufacturing Exploration Event"
-              heading="FEBRUARY 26"
-            />
-            <UpcomingImage
-              link="/#"
-              image={middle}
               text="Adult Student Info Night"
               heading="MARCH 5"
             />
             <UpcomingImage
               link="/#"
-              image={last}
+              image={middle}
               text="Mid-Term Classes Start"
               heading="MARCH 17"
+            />
+            <UpcomingImage
+              link="/#"
+              image={last}
+              text="Spring 2025 Job Fair"
+              heading="MARCH 26"
             />
           </div>
           <div className="">

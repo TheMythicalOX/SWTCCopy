@@ -24,7 +24,7 @@ const NewsImage = (props: {
     style1 = " p-5";
     style2 = "z-10 absolute w-full text-left font-bold  bottom-0";
     style3 = "";
-    style4 = "text-shadow text-xl p-3 bg-campus-bg inline-block";
+    style4 = "text-shadow text-xl p-3 bg-campus-bg text-center inline-block";
   } else {
     style1 = "";
     style2 =

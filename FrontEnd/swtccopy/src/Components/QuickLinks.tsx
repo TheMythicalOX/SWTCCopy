@@ -11,7 +11,7 @@ const QuickLinks = () => {
   let textStyle = "";
 
   if (width > 1000) {
-    boxStyle = "fixed right-0 bottom-[35%] list-none justify-items-end z-40";
+    boxStyle = "fixed right-0 bottom-[54%] list-none justify-items-end z-40";
 
     linkStyle = `w-[106px] h-[5.5rem] mb-2
     bg-quick-link-bg opacity-50 inline-flex group overflow-hidden
