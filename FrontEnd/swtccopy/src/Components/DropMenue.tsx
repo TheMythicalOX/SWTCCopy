@@ -1,10 +1,14 @@
 import React from "react";
+import DownArrow from "../images/down-chevron.png";
 
 const DropMenu = () => {
+  const imageStyle =
+    "invert w-3 inline-block m-auto ml-1 group-hover:invert-[0%] transition-all ease-in-out duration-700";
   let headDropBox =
     "h-full m-auto flex w-full group hover:bg-white hover:text-campus-bg align-middle text-center transition-all duration-500 relative";
 
-  let headDropText = "m-auto h-fit text-center align-middle text-[0.9rem]";
+  let headDropText =
+    "m-auto h-fit px-5 text-center align-middle text-nowrap inline-flex text-[0.9rem]";
 
   let headDropLink = "h-full m-auto flex w-full align-middle text-center";
 
@@ -19,7 +23,10 @@ const DropMenu = () => {
       <div className="flex h-10 w-[1000px] m-auto">
         <div className={headDropBox}>
           <a href="/#" className={headDropLink}>
-            <p className={headDropText}>Programs & Classes</p>
+            <p className={headDropText}>
+              Programs & Classes
+              <img src={DownArrow} alt="arrow" className={imageStyle} />
+            </p>
           </a>
           <div className={bodyDropBox}>
             <a href="/##" className={bodyDropLink}>
@@ -50,7 +57,10 @@ const DropMenu = () => {
         </div>
         <div className={headDropBox}>
           <a href="/#" className={headDropLink}>
-            <p className={headDropText}>Admissions</p>
+            <p className={headDropText}>
+              Admissions{" "}
+              <img src={DownArrow} alt="arrow" className={imageStyle} />
+            </p>
           </a>
           <div className={bodyDropBox}>
             <a href="/##" className={bodyDropLink}>
@@ -78,7 +88,10 @@ const DropMenu = () => {
         </div>
         <div className={headDropBox}>
           <a href="/#" className={headDropLink}>
-            <p className={headDropText}>Student Resources</p>
+            <p className={headDropText}>
+              Student Resources{" "}
+              <img src={DownArrow} alt="arrow" className={imageStyle} />
+            </p>
           </a>
           <div className={bodyDropBox}>
             <a href="/##" className={bodyDropLink}>
@@ -109,7 +122,10 @@ const DropMenu = () => {
         </div>
         <div className={headDropBox}>
           <a href="/#" className={headDropLink}>
-            <p className={headDropText}>Community</p>
+            <p className={headDropText}>
+              Community{" "}
+              <img src={DownArrow} alt="arrow" className={imageStyle} />
+            </p>
           </a>
           <div className={bodyDropBox}>
             <a href="/##" className={bodyDropLink}>
@@ -143,7 +159,10 @@ const DropMenu = () => {
         </div>
         <div className={headDropBox}>
           <a href="/#" className={headDropLink}>
-            <p className={headDropText}>Foundation</p>
+            <p className={headDropText}>
+              Foundation{" "}
+              <img src={DownArrow} alt="arrow" className={imageStyle} />
+            </p>
             <div className={bodyDropBox}></div>
           </a>
           <div className={bodyDropBox}>
@@ -169,8 +188,9 @@ const DropMenu = () => {
         </div>
         <div className={headDropBox}>
           <a href="/#" className={headDropLink}>
-            <p className={headDropText}>About</p>
-            <div className={bodyDropBox}></div>
+            <p className={headDropText}>
+              About <img src={DownArrow} alt="arrow" className={imageStyle} />
+            </p>
           </a>
           <div className={bodyDropBox}>
             <a href="/##" className={bodyDropLink}>

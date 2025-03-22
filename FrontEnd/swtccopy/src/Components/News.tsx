@@ -1,5 +1,5 @@
 import React from "react";
-import news from "../images/news.svg";
+import news from "../images/arrow-right.png";
 import NewsImage from "./NewsImage";
 import { useWindowDimensions } from "./App";
 
@@ -52,7 +52,11 @@ const News = () => {
             <div className="text-white p-3 h-auto w-[20%] mx-auto text-lg font-bold text-center transition-colors duration-500 hover:bg-white hover:text-header-bg">
               <p className="">
                 See all News
-                <img src={news} alt="tmp" className="w-4 inline"></img>
+                <img
+                  src={news}
+                  alt="tmp"
+                  className="w-5 ml-1 invert inline"
+                ></img>
               </p>
             </div>
           </a>

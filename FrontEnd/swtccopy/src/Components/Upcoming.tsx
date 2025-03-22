@@ -3,7 +3,7 @@ import first from "../images/AdultStudentInfoNight_we.jpg";
 import middle from "../images/MidtermStarts_we.jpg";
 import last from "../images/JobFair_we.jpg";
 import event from "../images/upcoming-events.svg";
-import tmp from "../images/tmp.svg";
+import Arrow from "../images/arrow-right.png";
 import UpcomingImage from "./UpcomingImage";
 import { useWindowDimensions } from "./App";
 
@@ -59,7 +59,7 @@ const Upcoming = () => {
             <div className="text-header-bg p-2 my-4 h-auto w-[35%] mx-auto text-lg font-bold text-center transition-colors duration-500 hover:bg-header-bg hover:text-white">
               <a href="/#">
                 See all Calendar Events
-                <img src={tmp} alt="tmp" className="w-4 inline"></img>
+                <img src={Arrow} alt="tmp" className="w-6 ml-1 inline"></img>
               </a>
             </div>
           </div>

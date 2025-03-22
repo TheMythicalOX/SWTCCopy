@@ -2,12 +2,15 @@ import React from "react";
 import swtclogo from "../images/swtlogo_hz_white.png";
 import searchIcon from "../images/search.gif";
 import Menu from "./Menu";
-import tmp from "../images/tmp.svg";
+import Hub from "../images/letter-h.png";
+import Myswtc from "../images/my-swtc-logo.png";
+import Schoology from "../images/letter-s.png";
+import People from "../images/multiple-users-silhouette.png";
 import { useWindowDimensions } from "./App";
 import DropMenu from "./DropMenue";
 
 const Header = () => {
-  const logoBasic = "w-14 inline-block pl-5";
+  const logoBasic = "w-14 inline-block pl-5  invert";
   const { width } = useWindowDimensions();
 
   let headBoxStyle = "";
@@ -40,16 +43,17 @@ const Header = () => {
 
   return (
     <div className="Head bg-header-bg font-medium">
+      <div data-icon=""></div>
       <div className={headBoxStyle}>
         <a href="/#" className={style1}>
           <img src={swtclogo} alt="swtclogo" />
         </a>
         <div className={searchBocxStyle}>
           <div className={style2}>
-            <img src={tmp} alt="TMP" className={logoBasic} />
-            <img src={tmp} alt="TMP" className={logoBasic} />
-            <img src={tmp} alt="TMP" className={logoBasic} />
-            <img src={tmp} alt="TMP" className={logoBasic} />
+            <img src={People} alt="TMP" className={logoBasic} />
+            <img src={Schoology} alt="TMP" className={logoBasic} />
+            <img src={Myswtc} alt="TMP" className={logoBasic} />
+            <img src={Hub} alt="TMP" className={logoBasic} />
           </div>
           <div className={style3}>
             <input

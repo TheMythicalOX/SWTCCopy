@@ -1,5 +1,7 @@
 import React from "react";
-import tmp from "../images/tmp.svg";
+import Location from "../images/pin.png";
+import Page from "../images/blank-page.png";
+import Book from "../images/book.png";
 import { useWindowDimensions } from "./App";
 
 const QuickLinks = () => {
@@ -18,7 +20,7 @@ const QuickLinks = () => {
     transition-all ease-in-out duration-700 border border-black border-r border-t border-l-2 border-b-2
     hover:bg-white hover:opacity-100 hover:w-80`;
 
-    imageStyle = `p-5 mx-[10.5px]`;
+    imageStyle = `p-6 mx-[10.5px] invert group-hover:invert-[0%] transition-all ease-in-out duration-700`;
 
     textStyle = `text-4xl font-bold my-auto
     text-campus-bg align-center
@@ -29,7 +31,7 @@ const QuickLinks = () => {
 
     linkStyle = `inline-flex w-full justify-center`;
 
-    imageStyle = `h-5 my-auto`;
+    imageStyle = `h-4 my-auto invert group-hover:invert-[0%] transition-all ease-in-out duration-700`;
 
     textStyle = `my-auto p-2 pl-0 text-lg font-semibold`;
   }
@@ -38,19 +40,19 @@ const QuickLinks = () => {
     <div className={boxStyle}>
       <li>
         <a href="/#" className={linkStyle}>
-          <img src={tmp} alt="" className={imageStyle} />
+          <img src={Location} alt="" className={imageStyle} />
           <h1 className={textStyle}>Visit</h1>
         </a>
       </li>
       <li>
         <a href="/#" className={linkStyle}>
-          <img src={tmp} alt="" className={imageStyle} />
+          <img src={Page} alt="" className={imageStyle} />
           <h1 className={textStyle}>Apply</h1>
         </a>
       </li>
       <li>
         <a href="/#" className={linkStyle}>
-          <img src={tmp} alt="" className={imageStyle} />
+          <img src={Book} alt="" className={imageStyle} />
           <h1 className={textStyle}>Classes</h1>
         </a>
       </li>

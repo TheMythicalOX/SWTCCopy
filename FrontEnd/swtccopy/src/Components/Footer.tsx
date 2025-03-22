@@ -1,8 +1,12 @@
 import React from "react";
-import tmp from "../images/tmp.svg";
+import Facebook from "../images/facebook.png";
+import Youtube from "../images/youtube.png";
+import Twitter from "../images/twitter.png";
+import Insta from "../images/instagram.png";
 import { useWindowDimensions } from "./App";
 
 const Footer = () => {
+  const iconStyle = "w-10 border-[2px] p-2 rounded-full border-black invert";
   const { width } = useWindowDimensions();
   let boxStyle = "";
 
@@ -108,11 +112,19 @@ const Footer = () => {
               <p>1800 Bronson Boulevard</p>
               <p>Fennimore, WI 53809</p>
             </div>
-            <div className="icons grid grid-cols-4">
-              <img src={tmp} alt="" className="w-10" />
-              <img src={tmp} alt="" className="w-10" />
-              <img src={tmp} alt="" className="w-10" />
-              <img src={tmp} alt="" className="w-10" />
+            <div className="icons grid grid-cols-4 pr-28 pl-4">
+              <a href="/#">
+                <img src={Facebook} alt="" className={iconStyle} />
+              </a>
+              <a href="/#">
+                <img src={Youtube} alt="" className={iconStyle} />
+              </a>
+              <a href="/#">
+                <img src={Twitter} alt="" className={iconStyle} />
+              </a>
+              <a href="/#">
+                <img src={Insta} alt="" className={iconStyle} />
+              </a>
             </div>
           </div>
         </div>
