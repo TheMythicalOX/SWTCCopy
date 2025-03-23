@@ -37,19 +37,19 @@ const Upcoming = () => {
           </div>
           <div className={style1}>
             <UpcomingImage
-              link="/#"
+              link="https://www.swtc.edu/calendar-events/details/2025-03-05%2018:00/from-here-to-career%7Cadult-student-info-night"
               image={first}
               text="Adult Student Info Night"
               heading="MARCH 5"
             />
             <UpcomingImage
-              link="/#"
+              link="https://www.swtc.edu/calendar-events/details/2025-03-17%2007:00/first-day-of-2nd-8%7Cweek-classes-"
               image={middle}
               text="Mid-Term Classes Start"
               heading="MARCH 17"
             />
             <UpcomingImage
-              link="/#"
+              link="https://www.swtc.edu/student-resources/career-services/events"
               image={last}
               text="Spring 2025 Job Fair"
               heading="MARCH 26"
@@ -57,7 +57,7 @@ const Upcoming = () => {
           </div>
           <div className="">
             <div className="text-header-bg p-2 my-4 h-auto w-[35%] mx-auto text-lg font-bold text-center transition-colors duration-500 hover:bg-header-bg hover:text-white">
-              <a href="/#">
+              <a href="https://swtc.edu/calendar-events/">
                 See all Calendar Events
                 <img src={Arrow} alt="tmp" className="w-6 ml-1 inline"></img>
               </a>
