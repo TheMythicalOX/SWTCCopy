@@ -39,19 +39,22 @@ const QuickLinks = () => {
   return (
     <div className={boxStyle}>
       <li>
-        <a href="/#" className={linkStyle}>
+        <a
+          href="https://swtc.edu/admissions/visit-campus"
+          className={linkStyle}
+        >
           <img src={Location} alt="" className={imageStyle} />
           <h1 className={textStyle}>Visit</h1>
         </a>
       </li>
       <li>
-        <a href="/#" className={linkStyle}>
+        <a href="https://swtc.edu/admissions/apply" className={linkStyle}>
           <img src={Page} alt="" className={imageStyle} />
           <h1 className={textStyle}>Apply</h1>
         </a>
       </li>
       <li>
-        <a href="/#" className={linkStyle}>
+        <a href="https://swtc.edu/academics/take-a-class" className={linkStyle}>
           <img src={Book} alt="" className={imageStyle} />
           <h1 className={textStyle}>Classes</h1>
         </a>
