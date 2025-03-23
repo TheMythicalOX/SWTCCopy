@@ -29,26 +29,26 @@ const News = () => {
         </div>
         <div className={style1}>
           <NewsImage
-            link="/#"
+            link="https://www.swtc.edu/news/press-releases/patel-selected-as-state-student-ambassador/"
             image="https://www.swtc.edu/news/wp-content/uploads/2025/03/FRONT.jpg"
             span={2}
             text="Patel selected as State Student Ambassador"
           />
           <NewsImage
-            link="/#"
+            link="https://www.swtc.edu/news/press-releases/students-advance-to-pas-national-conference/"
             image="https://www.swtc.edu/news/wp-content/uploads/2025/02/GROUP-USE.jpg"
             span={1}
             text="Students cadvance to PAS National Conference"
           />
           <NewsImage
-            link="/#"
+            link="https://www.swtc.edu/news/press-releases/students-compete-at-midwest-regional-dairy-challenge/"
             image="https://www.swtc.edu/news/wp-content/uploads/2025/02/GROUP-front2.jpg"
             span={1}
             text="Students compete at Midwest Reginal Dairy Challenge"
           />
         </div>
         <div className="pb-12">
-          <a href="/#" className="">
+          <a href="https://swtc.edu/news/" className="">
             <div className="text-white p-3 h-auto w-[20%] mx-auto text-lg font-bold text-center transition-colors duration-500 hover:bg-white hover:text-header-bg">
               <p className="">
                 See all News
