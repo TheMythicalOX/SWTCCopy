@@ -45,15 +45,31 @@ const Header = () => {
     <div className="Head bg-header-bg font-medium">
       <div data-icon=""></div>
       <div className={headBoxStyle}>
-        <a href="/#" className={style1}>
+        <a href="https://swtc.edu/" className={style1}>
           <img src={swtclogo} alt="swtclogo" />
         </a>
         <div className={searchBocxStyle}>
           <div className={style2}>
-            <img src={People} alt="TMP" className={logoBasic} />
-            <img src={Schoology} alt="TMP" className={logoBasic} />
-            <img src={Myswtc} alt="TMP" className={logoBasic} />
-            <img src={Hub} alt="TMP" className={logoBasic} />
+            <a href="https://swtc.edu/about/staff-directory">
+              <div>
+                <img src={People} alt="TMP" className={logoBasic} />
+              </div>
+            </a>
+            <a href="/#">
+              <div>
+                <img src={Schoology} alt="TMP" className={logoBasic} />
+              </div>
+            </a>{" "}
+            <a href="/#">
+              <div>
+                <img src={Myswtc} alt="TMP" className={logoBasic} />
+              </div>
+            </a>
+            <a href="/#">
+              <div>
+                <img src={Hub} alt="TMP" className={logoBasic} />
+              </div>
+            </a>
           </div>
           <div className={style3}>
             <input
@@ -65,6 +81,7 @@ const Header = () => {
               type="image"
               src={searchIcon}
               alt="Search"
+              // https://swtc.edu/search-results?q=(input)
               onClick={() => {}}
               className="align-bottom max-h-8 p-1.5 border-white bg-foot-text bg-none filter-none leading-normal"
             />
