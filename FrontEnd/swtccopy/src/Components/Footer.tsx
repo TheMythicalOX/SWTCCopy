@@ -25,26 +25,26 @@ const Footer = () => {
           <h1 className="font-medium pt-2 font pb-3">CONTACT INFORMATION</h1>
           <p>
             Phone:&nbsp;
-            <a className="text-foot-link" href="/#">
+            <a className="text-foot-link" href="tel:+16088223262">
               608.822.3262
             </a>
           </p>
           <p>
             Toll Free:&nbsp;
-            <a className="text-foot-link" href="/#">
+            <a className="text-foot-link" href="tel:+18003623322">
               800.362.3322
             </a>
           </p>
           <div className="bg-foot-text w-full h-0.5 my-2"></div>
           <p>
             TDD (hearing impared):&nbsp;
-            <a className="text-foot-link" href="/#">
+            <a className="text-foot-link" href="tel:+16088222072">
               608.822.2072
             </a>
           </p>
           <p>
             FAX:&nbsp;
-            <a className="text-foot-link" href="/#">
+            <a className="text-foot-link" href="tel:+16088226019">
               608.822.6019
             </a>
           </p>
@@ -52,31 +52,55 @@ const Footer = () => {
         <div className="Links row-span-3">
           <h1 className="font-medium pt-2 pb-3">CAMPUS LINKS</h1>
           <div className="CampLinks grid grid-cols-1">
-            <a className="text-foot-link" href="/#">
+            <a className="text-foot-link" href="https://www.swtcbookstore.com/">
               Bookstore
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/campus-closures"
+            >
               Campus Closures
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/community/ged-hsed"
+            >
               GED/HSED Services
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/student-resources/learning-resources/library/"
+            >
               Library Services
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/about/campus-maps"
+            >
               Maps
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://passwordreset.microsoftonline.com/"
+            >
               Student Password Reset
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://www.getrave.com/login/swtc"
+            >
               Sign up for Text Alerts
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/community/testing-center/"
+            >
               Testing Center
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/student-resources/policies-procedures/transcripts"
+            >
               Transcript Requests
             </a>
           </div>
@@ -84,19 +108,34 @@ const Footer = () => {
         <div className="Forms row-span-2">
           <h1 className="font-medium pt-2 pb-3">FORMS</h1>
           <div className="Form grid grid-cols-1">
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/forms/accommodations-request-form"
+            >
               Accommodation Request Form
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/student-resources/policies-procedures/complaints-process"
+            >
               Complaints Process
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/student-resources/learning-resources/health-programs-support"
+            >
               Health/Physical Forms
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/forms/ask-a-question"
+            >
               Information Request Form
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/student-resources/campus-services/campus-security-safety#concern"
+            >
               Report a(n) Concern/Incident
             </a>
           </div>
@@ -113,16 +152,16 @@ const Footer = () => {
               <p>Fennimore, WI 53809</p>
             </div>
             <div className="icons grid grid-cols-4 pr-28 pl-4">
-              <a href="/#">
+              <a href="https://www.facebook.com/southwesttech/">
                 <img src={Facebook} alt="" className={iconStyle} />
               </a>
-              <a href="/#">
+              <a href="https://www.youtube.com/channel/UCkLi-yKPgF-tShaw-GW6eMQ">
                 <img src={Youtube} alt="" className={iconStyle} />
               </a>
-              <a href="/#">
+              <a href="https://twitter.com/swtc">
                 <img src={Twitter} alt="" className={iconStyle} />
               </a>
-              <a href="/#">
+              <a href="https://www.instagram.com/explore/locations/1032409575/southwest-wisconsin-technical-college/">
                 <img src={Insta} alt="" className={iconStyle} />
               </a>
             </div>
@@ -131,10 +170,13 @@ const Footer = () => {
         <div className="staff row-span-1">
           <h1 className="font-medium pt-2 pb-3">STAFF LINKS</h1>
           <div className="Form grid grid-cols-1">
-            <a className="text-foot-link" href="/#">
+            <a className="text-foot-link" href="https://swtc.edu/staff-links">
               Faculty & Staff Links
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc0.sharepoint.com/sites/SPChargerHub2"
+            >
               Charger Hub
             </a>
           </div>
@@ -142,13 +184,19 @@ const Footer = () => {
         <div className="Employment">
           <h1 className="font-medium pt-2 pb-3">EMPLOYMENT</h1>
           <div className="Employ grid grid-cols-1">
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/student-resources/career-services/"
+            >
               Career Placement
             </a>
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://swtc.edu/about/job-opportunities"
+            >
               Job Opportunities
             </a>
-            <a className="text-foot-link" href="/#">
+            <a className="text-foot-link" href="https://joinhandshake.com/">
               Handshake
             </a>
           </div>
@@ -156,7 +204,10 @@ const Footer = () => {
         <div className="Tools">
           <h1 className="font-medium pt-2 pb-3">TECHNICAL TOOLS</h1>
           <div className="TechTools grid grid-cols-1">
-            <a className="text-foot-link" href="/#">
+            <a
+              className="text-foot-link"
+              href="https://kb.swtc.edu/remote-support"
+            >
               Remote Support
             </a>
           </div>
@@ -167,7 +218,7 @@ const Footer = () => {
           Southwest Tech is committed to legal affirmative action, equal
           opportunity, access and diversity of its campus community.{" "}
         </p>
-        <a className="text-foot-link pt-0" href="/#">
+        <a className="text-foot-link pt-0" href="https://swtc.edu/legal/ada">
           Full Statement
         </a>
         <p className="p-5">
