@@ -18,10 +18,10 @@ const Login = () => {
   return (
     <>
       <div className="loginBackgroundGradient w-screen h-screen flex items-center">
-        <div className="w-[50%] h-[45%] m-auto ">
-          <div className="w-full h-[82.5%] bg-white"></div>
+        <div className="w-[55%] h-[54%] m-auto ">
+          <div className="w-full h-[82.5%] bg-white shadow-stone-400 shadow-md"></div>
           <div className="w-full h-[5%]"></div>
-          <div className="w-full h-[12.5%] bg-white"></div>
+          <div className="w-full h-[12.5%] bg-white shadow-stone-400 shadow-md"></div>
         </div>
       </div>
     </>
