@@ -21,3 +21,7 @@ declare module "*.svg" {
   const value: string;
   export = value;
 }
+declare module "*.ico" {
+  const value: string;
+  export = value;
+}

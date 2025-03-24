@@ -66,12 +66,18 @@ const Header = () => {
                 <img src={Schoology} alt="TMP" className={logoSchoology} />
               </div>
             </a>{" "}
-            <a href="/#" className="w-14 inline-block">
+            <a
+              href="/login.microsoftonline.com/common/oauth2/authorizeresponse_type=code&client_id=f97b3686-bc70-4fee-b56d-f45878420d15&redirect_uri=https3A2F2Fapp.schoology.com2Flogin2Fexternal_accounts2Freceive2Fmicrosoft&state=c2NoZW1lPWh0dHBzJmhvc3Q9c3d0Y/"
+              className="w-14 inline-block"
+            >
               <div>
                 <img src={Myswtc} alt="TMP" className={logoBasic} />
               </div>
             </a>
-            <a href="/#" className="w-14 inline-block">
+            <a
+              href="/login.microsoftonline.com/common/oauth2/authorizeresponse_type=code&client_id=f97b3686-bc70-4fee-b56d-f45878420d15&redirect_uri=https3A2F2Fapp.schoology.com2Flogin2Fexternal_accounts2Freceive2Fmicrosoft&state=c2NoZW1lPWh0dHBzJmhvc3Q9c3d0Y/"
+              className="w-14 inline-block"
+            >
               <div>
                 <img src={Hub} alt="TMP" className={logoBasic} />
               </div>

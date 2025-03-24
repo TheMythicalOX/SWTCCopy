@@ -7,6 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.loginBackgroundGradient {
+  background: rgb(231, 215, 218);
+  background: linear-gradient(
+    135deg,
+    rgba(231, 215, 218, 1) 0%,
+    rgba(215, 232, 227, 1) 50%,
+    rgba(228, 225, 214, 1) 100%
+  );
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
