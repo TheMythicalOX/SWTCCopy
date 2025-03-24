@@ -18,7 +18,10 @@ const Campus = () => {
       <img src={hero} alt="TMP" className={imgStyle} />
       <div className="max-w-[1300px] justify-center align-middle mx-auto">
         <div className="p-5">
-          <a className="underline font-semibold text-xl p-4 pl-0" href="/#">
+          <a
+            className="underline font-semibold text-xl p-4 pl-0"
+            href="https://swtc.edu/admissions/visit-campus"
+          >
             Visit Campus
           </a>
           <p className="p-4 pl-0">

@@ -11,6 +11,7 @@ import DropMenu from "./DropMenue";
 
 const Header = () => {
   const logoBasic = "w-14 inline-block pl-5  invert";
+  const logoSchoology = "w-10 inline-block invert";
   const { width } = useWindowDimensions();
 
   let headBoxStyle = "";
@@ -43,29 +44,34 @@ const Header = () => {
 
   return (
     <div className="Head bg-header-bg font-medium">
-      <div data-icon=""></div>
       <div className={headBoxStyle}>
         <a href="https://swtc.edu/" className={style1}>
           <img src={swtclogo} alt="swtclogo" />
         </a>
         <div className={searchBocxStyle}>
           <div className={style2}>
-            <a href="https://swtc.edu/about/staff-directory">
+            <a
+              href="https://swtc.edu/about/staff-directory"
+              className="w-14 inline-block"
+            >
               <div>
                 <img src={People} alt="TMP" className={logoBasic} />
               </div>
             </a>
-            <a href="/#">
-              <div>
-                <img src={Schoology} alt="TMP" className={logoBasic} />
+            <a
+              href="/login.microsoftonline.com/common/oauth2/authorizeresponse_type=code&client_id=f97b3686-bc70-4fee-b56d-f45878420d15&redirect_uri=https3A2F2Fapp.schoology.com2Flogin2Fexternal_accounts2Freceive2Fmicrosoft&state=c2NoZW1lPWh0dHBzJmhvc3Q9c3d0Y/"
+              className="w-14 inline-block"
+            >
+              <div className="rounded-full outline w-8 h-8 ml-6">
+                <img src={Schoology} alt="TMP" className={logoSchoology} />
               </div>
             </a>{" "}
-            <a href="/#">
+            <a href="/#" className="w-14 inline-block">
               <div>
                 <img src={Myswtc} alt="TMP" className={logoBasic} />
               </div>
             </a>
-            <a href="/#">
+            <a href="/#" className="w-14 inline-block">
               <div>
                 <img src={Hub} alt="TMP" className={logoBasic} />
               </div>
