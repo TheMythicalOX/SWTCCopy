@@ -1,5 +1,6 @@
 import React from "react";
 import news from "../images/arrow-right.png";
+import newsIcon from "../images/news.svg";
 import NewsImage from "./NewsImage";
 import { useWindowDimensions } from "./App";
 
@@ -21,7 +22,7 @@ const News = () => {
     <div className="bg-news-bg p-5">
       <div className="max-w-[1300px] justify-center mx-auto">
         <div className="topNews text-white inline-flex w-full py-10">
-          <img src={news} alt="Event Icon" className="w-9 ml-4"></img>
+          <img src={newsIcon} alt="Event Icon" className="w-9 ml-4"></img>
           <h1 className="font-bold text-xl text-nowrap text-center m-auto pr-5">
             IN THE NEWS
           </h1>

@@ -1,13 +1,31 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-size: 1.2em;
+  /* letter-spacing: 1.5px; */
+  line-height: 1.5;
+
+  font-family: Arial, sans-serif, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.loginBody {
+  font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", Roboto, Ebrima,
+    "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI",
+    "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee,
+    "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic",
+    "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue",
+    "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti",
+    "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+.backgroundOpacityBlack {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .loginBackgroundGradient {
+  letter-spacing: 0.03em;
   background: rgb(231, 215, 218);
   background: linear-gradient(
     135deg,
@@ -15,6 +33,10 @@ body {
     rgba(215, 232, 227, 1) 50%,
     rgba(228, 225, 214, 1) 100%
   );
+  background-image: url(https://aadcdn.msftauthimages.net/dbd5a2dd-uu6n-8cm1lzzxmp32bd-arusmto4dao1chilpm9uy5s/logintenantbranding/0/illustration?ts=637278424084044203);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 code {
@@ -24,6 +46,25 @@ code {
 
 .input-border-none {
   border: none;
+}
+
+.loginInputBorder {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+}
+
+.loginInputBorder::placeholder {
+  color: rgb(68 64 60 / var(--tw-text-opacity, 1));
+}
+
+.loginInputBorder:focus {
+  border-color: #0067b8;
+}
+
+.loginInputBorder:hover {
+  border-color: black;
 }
 
 .text-shadow {

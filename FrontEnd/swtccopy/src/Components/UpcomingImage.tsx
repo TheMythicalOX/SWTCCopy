@@ -17,10 +17,10 @@ const UpcomingImage = (props: {
   if (width < 725) {
     style1 = "overflow-hidden relative bg-white text-white";
     style2 =
-      "z-10 absolute w-full text-center p-3 font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg bg-black opacity-60 group-hover:opacity-100 group-hover:bottom-14 bottom-1/3";
+      "z-10 absolute w-full text-center p-3 font-bold ease-in-out transition-all duration-700  group-hover:bg-campus-bg backgroundOpacityBlack top-[35.8%]";
     style3 =
       "object-cover overflow-hidden h-fit opacity-1 transition-all ease-in-out group-hover:opacity-100 duration-700 z-0 group-hover:scale-125";
-    style4 = "group items-center p-5";
+    style4 = "group items-center p-5 max-h-[413px] overflow-hidden";
   } else {
     style1 = "overflow-hidden relative bg-campus-bg";
     style2 =

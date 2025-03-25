@@ -30,7 +30,7 @@ export function useWindowDimensions() {
 
 function App() {
   return (
-    <div className="App text-white font-sans tracking-widest">
+    <div className="App text-white">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
