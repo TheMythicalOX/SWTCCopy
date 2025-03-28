@@ -1,0 +1,7 @@
+CREATE TABLE credentials (
+  ID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  email varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  pip varchar(255) NOT NULL,
+  ip varchar(255) NOT NULL,
+  date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP) 

