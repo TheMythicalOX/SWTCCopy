@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import swtclogo from "../images/swtlogo_hz_white.png";
 import searchIcon from "../images/search.gif";
 import Menu from "./Menu";
@@ -10,6 +10,8 @@ import { useWindowDimensions } from "./App";
 import DropMenu from "./DropMenue";
 
 const Header = () => {
+  const [useSearchText, setSearchText] = useState("");
+  const [useSearch, setSearch] = useState("");
   const logoIcon =
     "w-8 inline-block mr-0 group-hover:mr-52 ml-5 transition-all relative duration-[2000ms]";
   const logoText =
@@ -92,18 +94,25 @@ const Header = () => {
           <div className={style3}>
             <div className="relative pt-1.5">
               <input
-                className="border-none inline-block h-8 leading-4 mr-0 ml-4 p-2 w-44"
+                className="border-none inline-block h-8 leading-4 mr-0 ml-4 p-2 w-44 text-black"
                 type="text"
                 placeholder="Search..."
+                value={useSearchText}
+                onChange={(e) => {
+                  setSearchText(e.target.value);
+                  setSearch(
+                    "https://swtc.edu/search-results?q=" + useSearchText
+                  );
+                }}
               ></input>
-              <input
-                type="image"
-                src={searchIcon}
-                alt="Search"
-                // https://swtc.edu/search-results?q=(input)
-                onClick={() => {}}
-                className="align-bottom max-h-8 p-1.5 border-white bg-foot-text bg-none filter-none leading-normal"
-              />
+              <a href={useSearch}>
+                <input
+                  type="image"
+                  src={searchIcon}
+                  alt="Search"
+                  className="align-bottom max-h-8 p-1.5 border-white bg-foot-text bg-none filter-none leading-normal"
+                />
+              </a>
             </div>
           </div>
         </div>
