@@ -1,7 +1,4 @@
 import React from "react";
-import first from "../images/AdultStudentInfoNight_we.jpg";
-import middle from "../images/MidtermStarts_we.jpg";
-import last from "../images/JobFair_we.jpg";
 import event from "../images/upcoming-events.svg";
 import Arrow from "../images/arrow-right.png";
 import UpcomingImage from "./UpcomingImage";
@@ -37,22 +34,22 @@ const Upcoming = () => {
           </div>
           <div className={style1}>
             <UpcomingImage
-              link="https://www.swtc.edu/calendar-events/details/2025-03-05%2018:00/from-here-to-career%7Cadult-student-info-night"
-              image={first}
+              link="https://www.swtc.edu/calendar-events/details/2025-04-02%2018:00/adult-student-info-night-%7C-prairie-du-chien"
+              image="https://swtc.edu/Images/events/AdultStudentInfoNight_we.jpg"
               text="Adult Student Info Night"
-              heading="MARCH 5"
+              heading="APRIL 2"
             />
             <UpcomingImage
-              link="https://www.swtc.edu/calendar-events/details/2025-03-17%2007:00/first-day-of-2nd-8%7Cweek-classes-"
-              image={middle}
-              text="Mid-Term Classes Start"
-              heading="MARCH 17"
+              link="https://www.swtc.edu/calendar-events/details/2025-04-09%2016:00/open-weld-night"
+              image="https://swtc.edu/Images/events/open-welding-nights.jpg"
+              text="Open Weld Night"
+              heading="April 9"
             />
             <UpcomingImage
-              link="https://www.swtc.edu/student-resources/career-services/events"
-              image={last}
-              text="Spring 2025 Job Fair"
-              heading="MARCH 26"
+              link="https://www.swtc.edu/calendar-events/details/2025-04-16%2018:00/adult-student-info-night-%7C-richland-center"
+              image="https://swtc.edu/Images/events/AdultStudentInfo_4-16_we.jpg"
+              text="Adult Student Info Night"
+              heading="APRIL 16"
             />
           </div>
           <div className="">

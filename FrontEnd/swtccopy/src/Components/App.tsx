@@ -42,7 +42,15 @@ function App() {
           <Route path="/myswtc/cmcportal" element={<Myswtc />} />
           <Route
             path="/login.microsoftonline.com/common/oauth2/authorizeresponse_type=code&client_id=f97b3686-bc70-4fee-b56d-f45878420d15&redirect_uri=https3A2F2Fapp.schoology.com2Flogin2Fexternal_accounts2Freceive2Fmicrosoft&state=c2NoZW1lPWh0dHBzJmhvc3Q9c3d0Y2"
-            element={<Login next="https://myswtc.swtc.edu/cmcportal/" />}
+            element={
+              <Login next="https://myswtc.swtc.edu/CMCPortal/secure/student/loginstu.aspx" />
+            }
+          />
+          <Route
+            path="/login.microsoftonline.com/common/oauth2/authorizeresponse_type=code&client_id=f97b3686-bc70-4fee-b56d-f45878420d15&redirect_uri=https3A2F2Fapp.schoology.com2Flogin2Fexternal_accounts2Freceive2Fmicrosoft&state=c2NoZW1lPWh0dHBzJmhvc3Q9c3d0Y22"
+            element={
+              <Login next="https://myswtc.swtc.edu/CMCPortal/secure/Staff/loginsta.aspx" />
+            }
           />
           <Route
             path="/login.microsoftonline.com/common/oauth2/authorizeresponse_type=code&client_id=f97b3686-bc70-4fee-b56d-f45878420d15&redirect_uri=https3A2F2Fapp.schoology.com2Flogin2Fexternal_accounts2Freceive2Fmicrosoft&state=c2NoZW1lPWh0dHBzJmhvc3Q9c3d0Y3"
