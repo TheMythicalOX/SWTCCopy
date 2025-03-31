@@ -72,7 +72,7 @@ const Header = () => {
             </div>
             <div className={logoBox}>
               <div className={logoHide}></div>
-              <a href="/myswtc/cmcportal">
+              <a href="/myswtc/cmcportal" target="_blank">
                 <div className={logoText}>MySWTC Login</div>
                 <img src={Myswtc} alt="tp" className={logoIcon} />
               </a>
