@@ -36,7 +36,7 @@ const Header = () => {
       "text-nowrap text-xl font-bold h-full inline-block opacity-[0%] pl-16 absolute group-hover:opacity-[100%] transition-all duration-300";
     logoBox = "group relative inline-flex transition-all duration-700";
     logoHide = "bg-header-bg w-64 h-10 absolute";
-    headBoxStyle = "";
+    headBoxStyle = "max-w-[1300px] p-5 py-0 mx-auto";
     searchBocxStyle = "inline";
   } else {
     logoIcon =
@@ -57,10 +57,12 @@ const Header = () => {
     style1 = "w-8/12 block mx-6";
     // style2 = "inline-block";
     style3 = "float right";
+  } else if (width < 1300) {
+    style1 = "w-[35%] inline-block ml-6";
   } else {
     style1 = "w-[35%] inline-block ml-6";
     // style2 = "pl-1";
-    style3 = "block p-0.5 pt-5";
+    style3 = "block p-0.5 pt-5 float-end pr-10";
   }
 
   return (
@@ -106,7 +108,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className={style3 + " float-end pr-10"}>
+          <div className={style3}>
             <div
               className=" pt-1.5 inline-flex"
               onKeyDown={(e) => {
