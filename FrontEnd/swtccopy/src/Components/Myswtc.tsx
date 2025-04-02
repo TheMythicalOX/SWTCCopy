@@ -28,7 +28,7 @@ const Myswtc = () => {
       <div className="h-[12%] bg-header-bg">
         <img src={logo} alt="" className="h-12 ml-3 mt-5 absolute" />
       </div>
-      <div className="h-[88%]">
+      <div className="h-[88%] max-w-[1000px] m-auto">
         <div className="h-[95%] text-[1rem]">
           <div className="w-[80%]  m-auto text-center p-5 pt-40">
             <h1 className="text-black text-[2.5rem] font-extrabold swtcHeadText">
@@ -63,7 +63,7 @@ const Myswtc = () => {
             </div>
           </div>
         </div>
-        <div className="h-[5%]">
+        <div className="h-[5%] max-w-[1000px]">
           <div className="w-[95%] m-auto">
             <div className="w-full bg-[#bbb] mb-2 h-[1.5px]"></div>
             <div className="text-[#606060] text-[0.75rem] text-center swtcVersion">
