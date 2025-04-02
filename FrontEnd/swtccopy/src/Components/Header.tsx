@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import swtclogo from "../images/swtlogo_hz_white.png";
 import searchIcon from "../images/search.gif";
 import Menu from "./Menu";
@@ -12,24 +13,40 @@ import DropMenu from "./DropMenue";
 const Header = () => {
   const [useSearchText, setSearchText] = useState("");
   const [useSearch, setSearch] = useState("");
-  const logoIcon =
-    "w-8 inline-block mr-0 group-hover:mr-52 ml-5 transition-all relative duration-[2000ms]";
-  const logoText =
-    "text-nowrap text-xl font-bold h-full inline-block opacity-[0%] pl-16 absolute group-hover:opacity-[100%] transition-all duration-300";
-  const logoBox = "group relative inline-flex transition-all duration-700";
-  const logoHide = "bg-header-bg w-64 h-10 absolute";
   const { width } = useWindowDimensions();
+  const navigate = useNavigate();
 
+  let logoIcon = "";
+  let logoText = "";
+  let logoBox = "";
+  let logoHide = "";
   let headBoxStyle = "";
   let searchBocxStyle = "";
 
-  if (width < 1300) {
+  if (width < 725) {
+    logoIcon =
+      "w-7 inline-block mr-0 group-hover:mr-52 ml-2 transition-all relative duration-[2000ms]";
+    logoText = "hidden";
+    logoBox = "group relative inline-flex transition-all duration-700";
+    logoHide = "hidden";
     headBoxStyle = "max-w-[1300px] justify-center mx-auto";
-    searchBocxStyle = "";
-  } else if (width < 725) {
+    searchBocxStyle = "inline-flex mt-3";
+  } else if (width < 1300) {
+    logoIcon =
+      "w-8 inline-block mr-0 group-hover:mr-52 ml-5 transition-all relative duration-[2000ms]";
+    logoText =
+      "text-nowrap text-xl font-bold h-full inline-block opacity-[0%] pl-16 absolute group-hover:opacity-[100%] transition-all duration-300";
+    logoBox = "group relative inline-flex transition-all duration-700";
+    logoHide = "bg-header-bg w-64 h-10 absolute";
     headBoxStyle = "";
     searchBocxStyle = "inline";
   } else {
+    logoIcon =
+      "w-8 inline-block mr-0 group-hover:mr-52 ml-5 transition-all relative duration-[2000ms]";
+    logoText =
+      "text-nowrap text-xl font-bold h-full inline-block opacity-[0%] pl-16 absolute group-hover:opacity-[100%] transition-all duration-300";
+    logoBox = "group relative inline-flex transition-all duration-700";
+    logoHide = "bg-header-bg w-64 h-10 absolute";
     headBoxStyle = "max-w-[1300px] p-5 mx-auto";
     searchBocxStyle = "inline-block m-auto float-right";
   }
@@ -41,7 +58,7 @@ const Header = () => {
   if (width < 725) {
     style1 = "w-8/12 block mx-6";
     // style2 = "inline-block";
-    style3 = "inline-block float-right";
+    style3 = "float right";
   } else {
     style1 = "w-3/12 inline-block ml-6";
     // style2 = "pl-1";
@@ -51,7 +68,7 @@ const Header = () => {
   return (
     <div className="Head bg-header-bg font-medium">
       <div className={headBoxStyle}>
-        <a href="https://swtc.edu/" className={style1}>
+        <a href="/" className={style1}>
           <img src={swtclogo} alt="swtclogo" />
         </a>
         <div className={searchBocxStyle}>
@@ -72,7 +89,7 @@ const Header = () => {
             </div>
             <div className={logoBox}>
               <div className={logoHide}></div>
-              <a href="/myswtc/cmcportal" target="_blank">
+              <a href="/cmcportal" target="_blank">
                 <div className={logoText}>MySWTC Login</div>
                 <img src={Myswtc} alt="tp" className={logoIcon} />
               </a>
@@ -87,14 +104,22 @@ const Header = () => {
             <div className={logoBox}>
               <div className={logoHide}></div>
               <div>
-                <div className="w-8 inline-block mr-0 group-hover:mr-52 ml-5 transition-all relative duration-[2000ms]"></div>
+                <div className={logoIcon}></div>
               </div>
             </div>
           </div>
           <div className={style3}>
-            <div className="relative pt-1.5">
+            <div
+              className=" pt-1.5 inline-flex"
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  console.log("test");
+                  navigate(useSearch);
+                }
+              }}
+            >
               <input
-                className="border-none inline-block h-8 leading-4 mr-0 ml-4 p-2 w-44 text-black"
+                className="border-none inline-block h-7 leading-4 mr-0 ml-4 p-2 w-44 text-black"
                 type="text"
                 placeholder="Search..."
                 value={useSearchText}
@@ -110,7 +135,7 @@ const Header = () => {
                   type="image"
                   src={searchIcon}
                   alt="Search"
-                  className="align-bottom max-h-8 p-1.5 border-white bg-foot-text bg-none filter-none leading-normal"
+                  className="align-bottom max-h-7 p-1.5 border-white bg-foot-text bg-none filter-none leading-normal"
                 />
               </a>
             </div>
