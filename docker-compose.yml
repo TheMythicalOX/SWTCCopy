@@ -42,3 +42,21 @@ services:
       - MYSQL_ROOT_PASSWORD=root
     ports:
       - 9001:80
+
+  openvscode-server:
+    image: lscr.io/linuxserver/openvscode-server:latest
+    container_name: openvscode-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - CONNECTION_TOKEN= #optional
+      - CONNECTION_SECRET= #optional
+      - SUDO_PASSWORD=123 #optional
+      - SUDO_PASSWORD_HASH= #optional
+    volumes:
+      - /path/to/openvscode-server/config:/config
+      - ./:/workspace/
+    ports:
+      - 3001:3000
+    restart: unless-stopped
