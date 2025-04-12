@@ -28,7 +28,7 @@ const Header = () => {
     logoBox = "group relative inline-flex transition-all duration-700";
     logoHide = "hidden";
     headBoxStyle = "max-w-[1300px] justify-center mx-auto";
-    searchBocxStyle = "inline-flex mt-3";
+    searchBocxStyle = "inline-flex  mt-3";
   } else if (width < 1300) {
     logoIcon =
       "w-8 inline-block mr-0 group-hover:mr-52 ml-5 transition-all relative duration-[2000ms]";

@@ -6,7 +6,7 @@ import Insta from "../images/instagram.png";
 import { useWindowDimensions } from "./App";
 
 const Footer = () => {
-  const iconStyle = "w-10 border-[2px] p-2 rounded-full border-black invert";
+  const iconStyle = "w-10 border-[2px] p-2 rounded-full border-black invert hover:invert-[0%] hover:bg-white border-black hover:border-white transition-all ease-in-out duration-500";
   const { width } = useWindowDimensions();
   let boxStyle = "";
 

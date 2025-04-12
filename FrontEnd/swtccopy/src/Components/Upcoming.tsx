@@ -34,12 +34,6 @@ const Upcoming = () => {
           </div>
           <div className={style1}>
             <UpcomingImage
-              link="https://www.swtc.edu/calendar-events/details/2025-04-09%2016:00/open-weld-night"
-              image="https://swtc.edu/Images/events/open-welding-nights.jpg"
-              text="Open Weld Night"
-              heading="April 9"
-            />
-            <UpcomingImage
               link="https://www.swtc.edu/calendar-events/details/2025-04-16%2018:00/adult-student-info-night-%7C-richland-center"
               image="https://swtc.edu/Images/events/AdultStudentInfo_4-16_we.jpg"
               text="Adult Student Info Night"
@@ -50,6 +44,12 @@ const Upcoming = () => {
               image="https://www.swtc.edu/Images/events/campusclosed_we.jpg"
               text="Campus Closed"
               heading="APRIL 18"
+            />
+            <UpcomingImage
+              link="https://www.swtc.edu/events/new-student-registration/"
+              image="https://www.swtc.edu/Images/events/NewStudentOrientation_we.jpg"
+              text="New Student Registration"
+              heading="NOW - MAY 13"
             />
           </div>
           <div className="">

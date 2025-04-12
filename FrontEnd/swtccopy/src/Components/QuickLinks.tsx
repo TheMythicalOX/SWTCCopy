@@ -1,6 +1,6 @@
 import React from "react";
-import Location from "../images/pin.png";
-import Page from "../images/blank-page.png";
+import Location from "../images/location.png";
+import Page from "../images/file.png";
 import Book from "../images/book.png";
 import { useWindowDimensions } from "./App";
 
@@ -13,14 +13,14 @@ const QuickLinks = () => {
   let textStyle = "";
 
   if (width > 1000) {
-    boxStyle = "fixed right-0 bottom-[54%] list-none justify-items-end z-40";
+    boxStyle = "fixed right-0 top-[300px] list-none justify-items-end z-40";
 
     linkStyle = `w-[106px] h-[5.5rem] mb-2
     bg-quick-link-bg opacity-50 inline-flex group overflow-hidden
-    transition-all ease-in-out duration-700 border border-black border-r border-t border-l-2 border-b-2
+    transition-all ease-in-out duration-700 border-[#001930] border-l-2 border-b-2
     hover:bg-white hover:opacity-100 hover:w-80`;
 
-    imageStyle = `p-6 mx-[10.5px] invert group-hover:invert-[0%] transition-all ease-in-out duration-700`;
+    imageStyle = `p-6 mx-[10.5px] invert-[0%] group-hover:invert-[85%] transition-all ease-in-out duration-700`;
 
     textStyle = `text-4xl font-bold my-auto
     text-campus-bg align-center
@@ -31,7 +31,7 @@ const QuickLinks = () => {
 
     linkStyle = `inline-flex w-full justify-center`;
 
-    imageStyle = `h-4 my-auto invert group-hover:invert-[0%] transition-all ease-in-out duration-700`;
+    imageStyle = `h-4 my-auto invert-[0%] group-hover:invert-[85%] transition-all ease-in-out duration-700`;
 
     textStyle = `my-auto p-2 pl-0 text-lg font-semibold`;
   }
