@@ -1,5 +1,4 @@
 import React from "react";
-import hero from "../images/AspenHeroWeb.jpg";
 import { useWindowDimensions } from "./App";
 
 const Campus = () => {
@@ -15,7 +14,11 @@ const Campus = () => {
 
   return (
     <div className="camp bg-campus-bg mx-auto">
-      <img src={hero} alt="TMP" className={imgStyle} />
+      <img
+        src="https://www.swtc.edu/uploadedimages/homepage/AspenHomePageHero.jpg"
+        alt="TMP"
+        className={imgStyle}
+      />
       <div className="max-w-[1300px] justify-center align-middle mx-auto">
         <div className="p-2 py-5">
           <a

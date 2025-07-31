@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import swtclogo from "../images/swtlogo_hz_white.png";
 import searchIcon from "../images/search.gif";
 import Menu from "./Menu";
+import Mail from "../images/mail.png";
 import Hub from "../images/thehub.png";
 import Myswtc from "../images/myswtc.png";
 import Schoology from "../images/schoology.png";
@@ -72,12 +73,19 @@ const Header = () => {
           <img src={swtclogo} alt="swtclogo" />
         </a>
         <div className={searchBocxStyle}>
-          <div className="">
+          <div className="overflow-clip">
             <div className={logoBox}>
               <div className={logoHide}></div>
               <a href="https://swtc.edu/about/staff-directory">
                 <div className={logoText}>Campus Directory</div>
                 <img src={People} alt="tp" className={logoIcon} />
+              </a>
+            </div>
+            <div className={logoBox}>
+              <div className={logoHide}></div>
+              <a href="https://outlook.office.com/mail/">
+                <div className={logoText}>Student Email Login</div>
+                <img src={Mail} alt="tp" className={logoIcon} />
               </a>
             </div>
             <div className={logoBox}>
