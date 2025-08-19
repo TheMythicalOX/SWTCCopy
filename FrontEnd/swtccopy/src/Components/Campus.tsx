@@ -9,7 +9,7 @@ const Campus = () => {
   if (width > 1900) {
     imgStyle = "2col max-w-[1890px] w-auto object-contain mx-auto";
   } else {
-    imgStyle = "2col object-contain w-auto";
+    imgStyle = "2col object-contain w-auto mx-auto";
   }
 
   return (

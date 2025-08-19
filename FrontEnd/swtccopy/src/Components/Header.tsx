@@ -118,7 +118,7 @@ const Header = () => {
           </div>
           <div className={style3}>
             <div
-              className=" pt-1.5 inline-flex"
+              className=" pt-1.5 inline-flex w-[210px] h-[3vh]"
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   console.log("test");
@@ -127,7 +127,7 @@ const Header = () => {
               }}
             >
               <input
-                className="border-none inline-block h-7 leading-4 mr-0 ml-4 p-2 w-44 text-black"
+                className="border-none h-[3vh] w-[80%] leading-4 mr-0 p-2 text-black"
                 type="text"
                 placeholder="Search..."
                 value={useSearchText}
@@ -143,7 +143,7 @@ const Header = () => {
                   type="image"
                   src={searchIcon}
                   alt="Search"
-                  className="align-bottom max-h-7 p-1.5 border-white bg-foot-text bg-none filter-none leading-normal"
+                  className="align-top h-[3vh] p-1.5 w-[100%] border-white bg-foot-text bg-none filter-none leading-normal"
                 />
               </a>
             </div>
