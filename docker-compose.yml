@@ -1,7 +1,7 @@
 services:
   react-app:
     build: ./FrontEnd/swtccopy
-    container_name: react
+    container_name: react-swtc
     ports:
       - 3000:3000
     volumes:
@@ -11,7 +11,7 @@ services:
     tty: true
   php:
     build: ./PHP
-    container_name: PHP
+    container_name: PHP-swtc
     ports:
       - 9000:80
     volumes:
@@ -19,7 +19,7 @@ services:
 
   mysql:
     image: mysql:8.0.31-debian
-    container_name: MYSQL
+    container_name: MYSQL-swtc
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
@@ -34,6 +34,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin:5.2.2-apache
+    container_name: phpmyadmin-swtc
     restart: always
     depends_on:
       - mysql
@@ -45,7 +46,7 @@ services:
 
   openvscode-server:
     image: lscr.io/linuxserver/openvscode-server:latest
-    container_name: openvscode-server
+    container_name: openvscode-server-swtc
     environment:
       - PUID=1000
       - PGID=1000
