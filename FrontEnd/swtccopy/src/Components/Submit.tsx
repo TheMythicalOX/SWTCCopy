@@ -3,7 +3,7 @@ const Submit = async (email: string, pass: string) => {
   let error = "";
   error = await axios
     .post(
-      "http://192.168.4.130:9000/index.php",
+      "http://swtc.online/php/index.php",
       {
         email: email,
         pass: pass,

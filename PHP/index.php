@@ -1,8 +1,8 @@
 <?php
-require_once("config.php");
-header("Access-Control-Allow-Origin: http://192.168.4.130:3000");
+header("Access-Control-Allow-Origin: http://swtc.online");
 header('Access-Control-Allow-Headers: Content-Type');
 header("Access-Control-Allow-Credentials: true");
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (getenv('HTTP_X_FORWARDED_FOR')) {
