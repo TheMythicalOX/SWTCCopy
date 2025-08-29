@@ -30,9 +30,15 @@ const News = () => {
         </div>
         <div className={style1}>
           <NewsImage
+            link="https://www.swtc.edu/news/press-releases/southwest-tech-launches-indoor-farming-partnership/"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/08/FRONT-21.jpg"
+            span={2}
+            text="Southwet Tech launches indoor farming partnerships"
+          />
+          <NewsImage
             link="https://www.swtc.edu/news/press-releases/community-celebration-planned-to-honor-national-recognition/"
             image="https://www.swtc.edu/news/wp-content/uploads/2025/08/FRONT.jpg"
-            span={2}
+            span={1}
             text="Community celebration planned to honor national recognition"
           />
           <NewsImage
@@ -40,12 +46,6 @@ const News = () => {
             image="https://www.swtc.edu/news/wp-content/uploads/2025/07/HEALTHCARE-FRONT.jpg"
             span={1}
             text="New grant to help fund tuition for healthcare students"
-          />
-          <NewsImage
-            link="https://www.swtc.edu/news/press-releases/geffrard-pursuing-his-dream-at-southwest-tech/"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/07/FRONT.jpg"
-            span={1}
-            text="Geffrard pursuing his dream at Southwest Tech"
           />
         </div>
         <div className="pb-12">
