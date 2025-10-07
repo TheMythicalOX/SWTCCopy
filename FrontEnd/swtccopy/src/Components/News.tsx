@@ -30,22 +30,22 @@ const News = () => {
         </div>
         <div className={style1}>
           <NewsImage
-            link="https://www.swtc.edu/news/press-releases/holums-memory-lives-on-through-scholarship/"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/09/FRONT.jpg"
+            link="https://www.swtc.edu/news/press-releases/platteville-principal-traces-roots-to-southwest-tech/"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/09/FRONT-4.jpg"
             span={2}
-            text="Holum's memory lives on through scholarship"
+            text="Platteville principal traces roots to Southwest Tech"
           />
           <NewsImage
-            link="https://www.swtc.edu/news/press-releases/southwest-tech-launches-indoor-farming-partnership/"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/08/FRONT-21.jpg"
+            link="https://www.swtc.edu/news/press-releases/building-trades-carpentry-students-back-at-it-with-duplex-build/"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/09/FRONT-2.jpg"
             span={1}
-            text="Southwet Tech launches indoor farming partnerships"
+            text="Building Trades - Carpentry students back at it with duplex build"
           />
           <NewsImage
-            link="https://www.swtc.edu/news/press-releases/community-celebration-planned-to-honor-national-recognition/"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/08/FRONT.jpg"
+            link="https://www.swtc.edu/news/press-releases/gluten-free-menu-added-to-cafe-options/"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/09/FRONT-1.jpg"
             span={1}
-            text="Community celebration planned to honor national recognition"
+            text="Gluten-free menu added to cafe options"
           />
         </div>
         <div className="pb-12">
