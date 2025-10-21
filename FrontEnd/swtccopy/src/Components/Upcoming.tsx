@@ -36,21 +36,21 @@ const Upcoming = () => {
           <div className={style1}>
             <UpcomingImage
               link="https://www.swtc.edu/"
-              image="https://www.swtc.edu/Images/events/Mid-term_we.jpg"
-              text="Midterm Courses Begin"
-              heading="OCTOBER 13"
-            />
-            <UpcomingImage
-              link="https://www.swtc.edu/calendar-events/ag-day"
-              image="https://www.swtc.edu/Images/events/AgDay_we.jpg"
-              text="Ag Day"
-              heading="OCTOBER 16"
+              image="https://www.swtc.edu/Images/events/CampusWeb.jpeg"
+              text="Staff In-service"
+              heading="OCTOBER 22"
             />
             <UpcomingImage
               link="https://www.swtc.edu/calendar-events/exploration-event"
               image="https://www.swtc.edu/Images/events/Explore-Mfg-we.jpg"
               text="Auto Collision/Auto Tech Career Exploration"
               heading="OCTOBER 23"
+            />
+            <UpcomingImage
+              link="https://swtc.edu/student-resources/career-services/events"
+              image="https://www.swtc.edu/Images/events/JobFair_we.jpg"
+              text="Job Fair"
+              heading="OCTOBER 29"
             />
           </div>
           <div className="">
