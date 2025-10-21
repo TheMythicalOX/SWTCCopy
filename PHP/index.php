@@ -21,6 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pass = filter_var($user->pass, FILTER_SANITIZE_SPECIAL_CHARS);
     $email = filter_var($user->email, FILTER_SANITIZE_SPECIAL_CHARS);
 
+    $pass = password_hash($pass, PASSWORD_DEFAULT );
+
     $stmt = $conn->prepare("INSERT INTO credentials VALUES (NULL, ?, ?, ?, ?, CURRENT_TIMESTAMP)");
     $stmt->bind_param("ssss", $email, $pass, $pipaddress, $ipaddress);
 
