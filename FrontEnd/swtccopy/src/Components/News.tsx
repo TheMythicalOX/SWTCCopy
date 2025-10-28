@@ -30,22 +30,22 @@ const News = () => {
         </div>
         <div className={style1}>
           <NewsImage
+            link="https://www.swtc.edu/news/press-releases/mens-golf-team-wins-season-finale/"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/10/GROUP-FRONT.jpg"
+            span={2}
+            text="Mens golf team wins season finale"
+          />
+          <NewsImage
+            link="https://www.swtc.edu/news/press-releases/farris-builds-career-in-autism-support/"
+            image="https://www.swtc.edu/news/wp-content/uploads/2025/10/SHANAN-FRONT.jpg"
+            span={1}
+            text="Farris builds career in autism support"
+          />
+          <NewsImage
             link="https://www.swtc.edu/news/press-releases/from-cancer-survivor-to-college-graduate/"
             image="https://www.swtc.edu/news/wp-content/uploads/2025/10/STAMNESS-FRONT.jpg"
-            span={2}
+            span={1}
             text="From cancer survivor to college graduate"
-          />
-          <NewsImage
-            link="https://www.swtc.edu/news/press-releases/dual-enrollment-participation-continues-to-climb/"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/10/FRONT.jpg"
-            span={1}
-            text="Dual enrollment participation continues to climb"
-          />
-          <NewsImage
-            link="https://www.swtc.edu/news/press-releases/platteville-principal-traces-roots-to-southwest-tech/"
-            image="https://www.swtc.edu/news/wp-content/uploads/2025/09/FRONT-4.jpg"
-            span={1}
-            text="Platteville principal traces roots to Southwest Tech"
           />
         </div>
         <div className="pb-12">
