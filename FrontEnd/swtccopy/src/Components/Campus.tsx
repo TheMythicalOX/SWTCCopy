@@ -27,7 +27,7 @@ const Campus = () => {
           >
             Visit Campus
           </a>
-          <p className="p-4 pl-0 text-[72.9165%]">
+          <p className="p-4 pl-0 text-[85%]">
             Picture yourself as a Charger—see classrooms, shops, and labs; meet
             students and faculty; discover resources available that will help
             you achieve your goals. Join us for a campus tour and enjoy our
@@ -35,6 +35,24 @@ const Campus = () => {
             is ready to help you explore your options by talking about programs
             you might be interested in or by taking a career assessment to see
             what program is the best fit for you.
+          </p>
+        </div>
+        <div className="p-2 py-5">
+          <a
+            className="underline font-semibold  p-4 pl-0"
+            href="https://www.swtc.edu/about/presidentialsearch"
+          >
+            Presidential Search
+          </a>
+          <p className="p-4 pl-0 text-[85%]">
+            Southwest Wisconsin Technical College, winner of the 2025 Aspen
+            Prize for Community College Excellence, has launched the search for
+            its next president. Visit our{" "}
+            <a className="underline cursor-pointer">
+              Presidential Search webpage
+            </a>{" "}
+            for transparent, timely updates and opportunities to stay informed
+            throughout the process.
           </p>
         </div>
       </div>
