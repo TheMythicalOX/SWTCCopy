@@ -35,22 +35,22 @@ const Upcoming = () => {
           </div>
           <div className={style1}>
             <UpcomingImage
-              link="https://www.swtc.edu/"
-              image="https://www.swtc.edu/Images/events/CampusWeb.jpeg"
-              text="Staff In-service"
-              heading="OCTOBER 22"
+              link="https://www.swtc.edu/student-resources/student-services/registration"
+              image="https://www.swtc.edu/Images/events/Veterans-Priority-we%20(2).jpg"
+              text="Veteran Priority Registration Begins"
+              heading="November 3"
             />
             <UpcomingImage
-              link="https://www.swtc.edu/calendar-events/exploration-event"
-              image="https://www.swtc.edu/Images/events/Explore-Mfg-we.jpg"
-              text="Auto Collision/Auto Tech Career Exploration"
-              heading="OCTOBER 23"
+              link="https://www.swtc.edu/student-resources/student-services/registration"
+              image="https://www.swtc.edu/Images/events/Continuing_Student_Reg_we.jpg"
+              text="Continuing Student Registration Begins"
+              heading="November 4"
             />
             <UpcomingImage
-              link="https://swtc.edu/student-resources/career-services/events"
-              image="https://www.swtc.edu/Images/events/JobFair_we.jpg"
-              text="Job Fair"
-              heading="OCTOBER 29"
+              link="https://www.swtc.edu/calendar-events/details/2025-11-05%2009:00/health-career-exploration-day"
+              image="https://www.swtc.edu/Images/events/Health-Career-Exploration-Day.jpg"
+              text="Health Career Exploration Day"
+              heading="November 5"
             />
           </div>
           <div className="">
