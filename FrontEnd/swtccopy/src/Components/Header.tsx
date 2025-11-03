@@ -4,6 +4,7 @@ import searchIcon from "../images/search.gif";
 import Menu from "./Menu";
 import Mail from "../images/mail.png";
 import Hub from "../images/thehub.png";
+import Access from "../images/accessibility.png";
 import Myswtc from "../images/myswtc.png";
 import Schoology from "../images/schoology.png";
 import People from "../images/people.png";
@@ -107,6 +108,13 @@ const Header = () => {
               <a href="/login.microsoftonline.com/common/oauth2/authorizeresponse_type=code&client_id=f97b3686-bc70-4fee-b56d-f45878420d15&redirect_uri=https3A2F2Fapp.schoology.com2Flogin2Fexternal_accounts2Freceive2Fmicrosoft&state=c2NoZW1lPWh0dHBzJmhvc3Q9c3d0Y3">
                 <div className={logoText}>The HUB Login</div>
                 <img src={Hub} alt="tp" className={logoIcon} />
+              </a>
+            </div>
+            <div className={logoBox}>
+              <div className={logoHide}></div>
+              <a href="https://www.swtc.edu/forms/email-us.aspx?EntityType=department&EntityID=173">
+                <div className={logoText}>Web Accessibility</div>
+                <img src={Access} alt="tp" className={logoIcon + " invert"} />
               </a>
             </div>
             <div className={logoBox}>
